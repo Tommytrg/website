@@ -3,7 +3,6 @@
     <Hero />
     <DecentralizedOracle />
     <!-- <nuxt-content :document="page" /> -->
-    <Testimonials />
     <WitToken />
     <Ecosystem />
     <GetInvolved />
@@ -18,7 +17,6 @@ import JoinCommunity from '@/components/JoinCommunity.vue'
 import GetInvolved from '@/components/GetInvolved.vue'
 import Ecosystem from '@/components/Ecosystem.vue'
 import WitToken from '@/components/WitToken.vue'
-import Testimonials from '@/components/Testimonials.vue'
 import Hero from '@/components/Hero.vue'
 import DecentralizedOracle from '@/components/DecentralizedOracle.vue'
 
@@ -29,7 +27,6 @@ export default {
     GetInvolved,
     Ecosystem,
     WitToken,
-    Testimonials,
     DecentralizedOracle,
     Hero,
   },

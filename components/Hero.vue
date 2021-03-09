@@ -26,23 +26,18 @@
         alt="Witnet pet doing creating requests"
         class="hero-image"
       />
-      <!-- <div class="right">
-        <p>(nice illustration here)</p>
-      </div> -->
-    </div>
-
-    <div class="right">
-      <p>(nice illustration here)</p>
     </div>
   </SectionLayout>
 </template>
 
 <script>
 import Button from '@/components/Button.vue'
+import SectionLayout from '@/components/layouts/SectionLayout.vue'
 
 export default {
   components: {
     Button,
+    SectionLayout,
   },
 }
 </script>
@@ -50,8 +45,6 @@ export default {
 <style lang="scss" scoped>
 .section {
   color: $white;
-  background: $blue-5;
-  min-height: 90vh;
   padding: 0 180px;
   min-height: 100vh;
   display: grid;
@@ -106,7 +99,6 @@ export default {
   .right {
     border: 2px solid $white;
     position: relative;
-    z-index: 10;
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -117,7 +109,6 @@ export default {
     content: '';
     display: block;
     position: absolute;
-    z-index: -1;
     top: -25px;
     left: -25px;
     right: 15px;

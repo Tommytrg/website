@@ -103,7 +103,6 @@ export default {
   display: flex;
   height: 10vh;
   justify-content: space-between;
-  background: $blue-5;
   padding: 0 15vw;
 
   .logo-container {
@@ -129,11 +128,7 @@ export default {
     .tab {
       font-size: 1.12rem;
       display: flex;
-<<<<<<< HEAD
-      color: $white;
-=======
       color: black;
->>>>>>> 40681af (wip new design)
       align-items: center;
       text-decoration: none;
       padding: 24px 32px;
@@ -206,11 +201,6 @@ export default {
     overflow-y: hidden;
   }
   .navbar {
-<<<<<<< HEAD
-    background-color: $blue-5;
-=======
-    // background-color: #12243a;
->>>>>>> 40681af (wip new design)
     display: block;
     position: relative;
     padding: 0 0;
