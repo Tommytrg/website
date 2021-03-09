@@ -17,8 +17,8 @@
           <p class="illustration">(Nice illustration here)</p>
         </div>
       </div>
-      <Button color="black" :font-size="16" class="margin-top">
-        > {{ $t('button_label') }}
+      <Button color="plain" :font-size="16" class="margin-top">
+        {{ $t('button_label') }}
       </Button>
     </div>
   </SectionLayout>

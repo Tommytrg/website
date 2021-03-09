@@ -2,7 +2,11 @@
   <div :class="{ drop: isMenuVisible }">
     <nav class="navbar">
       <nuxt-link to="/" class="logo-container" @click.native="closeMenu">
-        <img class="logo" href="#" alt="Witnet logo" />
+        <img
+          class="logo"
+          src="@/assets/svg/witnet_logo.svg"
+          alt="Witnet logo"
+        />
       </nuxt-link>
       <label class="responsive-menu" @click="toggleMenu">&#9776;</label>
       <transition name="dropdown" class="dropdown">
@@ -27,18 +31,11 @@
               <span class="slash">/</span>{{ $t('nav_bar.route.blog') }}
             </nuxt-link>
           </li>
-          <li @mouseover="hover = true" @mouseleave="hover = false">
+          <li>
             <a class="tab" href="https://github.com/witnet" target="_blank">
               <img
-                v-if="hover"
                 class="social"
-                src="/"
-                :alt="$t('nav_bar.social_image_alt')"
-              />
-              <img
-                v-else
-                class="social"
-                src="/"
+                src="@/assets/svg/github.svg"
                 :alt="$t('nav_bar.social_image_alt')"
               />
             </a>
@@ -114,7 +111,7 @@ export default {
     align-items: center;
     text-decoration: none;
     .logo {
-      width: 80px;
+      height: 39px;
     }
   }
   .responsive-menu {
@@ -132,12 +129,16 @@ export default {
     .tab {
       font-size: 1.12rem;
       display: flex;
+<<<<<<< HEAD
       color: $white;
+=======
+      color: black;
+>>>>>>> 40681af (wip new design)
       align-items: center;
       text-decoration: none;
       padding: 24px 32px;
       .social {
-        width: 20px;
+        height: 23px;
         margin: auto 8px;
       }
       .slash {
@@ -205,7 +206,11 @@ export default {
     overflow-y: hidden;
   }
   .navbar {
+<<<<<<< HEAD
     background-color: $blue-5;
+=======
+    // background-color: #12243a;
+>>>>>>> 40681af (wip new design)
     display: block;
     position: relative;
     padding: 0 0;
