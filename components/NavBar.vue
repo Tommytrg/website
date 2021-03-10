@@ -31,11 +31,18 @@
               <span class="slash">/</span>{{ $t('nav_bar.route.blog') }}
             </nuxt-link>
           </li>
-          <li>
+          <li @mouseover="hover = true" @mouseleave="hover = false">
             <a class="tab" href="https://github.com/witnet" target="_blank">
               <img
+                v-if="hover"
                 class="social"
-                src="@/assets/svg/github.svg"
+                src="/"
+                :alt="$t('nav_bar.social_image_alt')"
+              />
+              <img
+                v-else
+                class="social"
+                src="/"
                 :alt="$t('nav_bar.social_image_alt')"
               />
             </a>
@@ -114,7 +121,7 @@ export default {
     }
   }
   .responsive-menu {
-    color: $white;
+    color: $black;
     display: none;
     font-size: 34px;
   }
@@ -207,7 +214,7 @@ export default {
     .logo-container {
       .logo {
         margin: 10px;
-        width: 70px;
+        height: 39px;
       }
     }
     .responsive-menu {
