@@ -136,7 +136,8 @@ export default {
       display: block;
     }
     .tab {
-      font-size: 1.12rem;
+      font-family: almarai, sans-serif;
+      font-size: 1rem;
       display: flex;
       color: $black;
       align-items: center;

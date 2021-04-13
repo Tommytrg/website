@@ -12,17 +12,17 @@
         <p class="text">{{ $t('wit_token.text') }}</p>
         <div class="btn-container">
           <a :href="urls.mining" target="_blank">
-            <Button class="btn" type="primary" :font-size="14">{{
+            <Button class="btn" type="primary">{{
               $t('wit_token.buttons.mining')
             }}</Button>
           </a>
           <a :href="urls.tokenomics" target="_blank">
-            <Button class="btn" type="default" :font-size="14">{{
+            <Button class="btn" type="default">{{
               $t('wit_token.buttons.tokenomics')
             }}</Button>
           </a>
           <a :href="urls.sheikah" target="_blank">
-            <Button class="btn" type="default" :font-size="14">
+            <Button class="btn" type="default">
               {{ $t('wit_token.buttons.sheikah') }}
             </Button>
           </a>
@@ -108,6 +108,10 @@ export default {
 }
 .text {
   max-width: 400px;
+  font-family: almarai, sans-serif;
+  justify-self: center;
+  font-size: 1.125rem;
+  font-weight: lighter;
 }
 .btn-container {
   display: flex;

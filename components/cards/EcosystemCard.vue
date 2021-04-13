@@ -62,6 +62,9 @@ export default {
     }
   }
   .subtitle {
+    font-size: 1.125rem;
+    font-family: almarai, sans-serif;
+
     &.border {
       color: $grey-3;
     }

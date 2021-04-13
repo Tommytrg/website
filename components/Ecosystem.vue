@@ -96,6 +96,9 @@ export default {
     text-align: center;
     max-width: 500px;
     margin: 0 auto;
+    font-size: 1.125rem;
+    font-family: almarai, sans-serif;
+    font-weight: lighter;
   }
   .ecosystem-card-container {
     display: grid;

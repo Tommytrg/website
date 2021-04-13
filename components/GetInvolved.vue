@@ -119,6 +119,13 @@ export default {
     align-items: center;
     .right {
       max-width: 35vw;
+
+      .content {
+        font-family: almarai, sans-serif;
+        font-weight: 1.125rem;
+        font-weight: lighter;
+      }
+
       .title {
         color: $dark-blue;
         margin-bottom: 16px;

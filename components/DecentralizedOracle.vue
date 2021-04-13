@@ -24,7 +24,7 @@
               {{ $t('decentralized_oracle.paragraph_2') }}
             </p>
             <a :href="urls.docs" target="_blank">
-              <Button type="primary" :font-size="14" class="btn">{{
+              <Button type="primary" class="btn">{{
                 $t('decentralized_oracle.button_label')
               }}</Button>
             </a>
@@ -139,6 +139,8 @@ export default {
 
         .paragraph {
           margin-bottom: 16px;
+          font-family: almarai, sans-serif;
+          font-size: 1.125rem;
         }
         .btn {
           margin-top: 16px;

@@ -74,6 +74,12 @@ export default {
     border: 1px solid $grey-1;
     box-shadow: 1px 1px 10px 2px $alpha-purple;
   }
+
+  .vs__dropdown-option {
+    font-family: almarai, sans-serif;
+    font-size: 0.75rem;
+  }
+
   .vs__dropdown-option--highlight {
     background: $green-1;
   }
@@ -89,6 +95,8 @@ export default {
     vertical-align: middle;
   }
   .vs__selected {
+    font-family: almarai, sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 4px 0 0 0;
   }

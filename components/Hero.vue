@@ -9,10 +9,10 @@
       <p class="description">{{ $t('hero.description') }}</p>
       <div class="buttons">
         <a :href="urls.docs" target="_blank">
-          <Button type="primary" :font-size="14">Build with Witnet</Button>
+          <Button type="primary">Build with Witnet</Button>
         </a>
         <a :href="urls.minning" target="_blank">
-          <Button class="card-button" type="secondary" :font-size="14">
+          <Button class="card-button" type="secondary">
             <i18n
               path="hero.buttons.start_mining.base"
               class="title"
@@ -69,7 +69,8 @@ export default {
     }
   }
   .description {
-    font-size: 1.4rem;
+    font-size: 1.3125rem;
+    font-family: almarai, sans-serif;
     margin: 32px 0;
     color: $grey-3;
   }
