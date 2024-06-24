@@ -34,7 +34,24 @@
       "mark": "!"
     },
     "description1": "Secure the Network, Earn Rewards!",
-    "description2": "Witnet 2.0 is unstoppable"
+    "description2": "Secure the network, earn rewards, and be part of a censorship-resistant oracle.",
+    "description3": "Witnet 2.0 is unstoppable."
+  },
+  "buy-section": {
+    "title": "Buy $WIT",
+    "description": "$WIT, the native coin of Witnet, is available on trusted and well-known crypto exchanges. By acquiring and staking $WIT, you become a valuable part of the Witnet Community, contributing to the security, growth, and success of the decentralized future with Witnet.",
+    "exchanges": {
+      "gate": "Gate.io",
+      "mexc": "MEXC",
+      "bitmart": "Bitmart",
+      "changelly": "Changelly",
+      "simpleswap": "Simpleswap",
+      "letsexchange": "LetsExchange"
+    }
+  },
+  "secure-section": {
+    "title": "Secure Your $WIT",
+    "description": "$WIT, the native coin of Witnet, is available on trusted and well-known crypto exchanges. By acquiring and staking $WIT, you become a valuable part of the Witnet Community, contributing to the security, growth, and success of the decentralized future with Witnet."
   },
   "build-section": {
     "title":{

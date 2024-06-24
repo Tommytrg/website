@@ -15,7 +15,7 @@
           </InnerLink>
         </template>
       </TopBar>
-      <SocialLinks class="fixed sm:hidden" />
+      <!-- <SocialLinks class="fixed sm:hidden" /> -->
     </NuxtLayout>
     <!-- <Compoennt /> -->
     <!-- <client-only>
