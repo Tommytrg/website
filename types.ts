@@ -13,6 +13,7 @@ export type Locale = {
 export enum ButtonType {
   primary = 'primary',
   secondary = 'secondary',
+  terciary = 'terciary',
   disabled = 'disabled',
 }
 

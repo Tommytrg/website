@@ -8,6 +8,7 @@
     <BuildSection class="py-16" />
     <ExploreSection class="py-16" />
     <Tutorials class="py-16" />
+    <CommunitySection class="py-16" />
     <Newsletter class="py-16"/>
   </div>
 </template>

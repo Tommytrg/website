@@ -4,6 +4,10 @@
     <h3 class="title-h1 mb-lg">{{ t('secure-section.title') }}</h3>
 
     <p class="description text mb-lg max-w-2xl text-center">{{ t('secure-section.description') }}</p>
+    
+    <div>
+      <OutOfBoundariesCard></OutOfBoundariesCard>
+    </div>
   </div>
 
   </div>
