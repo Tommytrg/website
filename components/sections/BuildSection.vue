@@ -1,26 +1,28 @@
 <template>
-<div class="flex flex-col">
-  <div class="flex flex-col items-center">
-    <!-- <h3 class="title-h1 mb-lg">{{ t('build-section.title') }}</h3> -->
+  <SectionBase :description="t('build-section.description')">
+    <template v-slot:title>
+      <i18n-t
+        keypath="build-section.title.key_features"
+        class="title-h1 mb-lg"
+        tag="span"
+      >
+        <span class="blue">{{ $t('build-section.title.dot') }}</span>
+      </i18n-t>
+    </template>
 
-    <i18n-t keypath="build-section.title.key_features" class="title-h1 mb-lg" tag="h3">
-      <span class="blue">{{ $t('build-section.title.dot') }}</span>
-    </i18n-t>
-
-    <p class="description text mb-lg max-w-2xl text-center">{{ t('build-section.description') }}</p>
-  </div>
-
-  <div class="grid grid-cols-2 p-xl gap-xl">
-    <!-- <h2 class="title-h2">{{ $t('build-section.title') }}</h2> -->
-    <BuildWithWitnet
-      v-for="(reason, index) in reasons"
-      :index="index + 1"
-      :key="reason.title"
-      :title="reason.title"
-      :description="reason.description"
-    />
-  </div>
-</div>
+    <template v-slot:content>
+      <div class="grid grid-cols-2 p-xl gap-xl">
+        <!-- <h2 class="title-h2">{{ $t('build-section.title') }}</h2> -->
+        <BuildWithWitnet
+          v-for="(reason, index) in reasons"
+          :index="index + 1"
+          :key="reason.title"
+          :title="reason.title"
+          :description="reason.description"
+        />
+      </div>
+    </template>
+  </SectionBase>
 </template>
 
 <script setup lang="ts">

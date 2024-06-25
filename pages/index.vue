@@ -2,14 +2,14 @@
   <div class="grid grid-flow-row overflow-hidden">
     <HeroSection />
     <WhatIsWitnetSection class="py-16" />
-    <CoinSection class="py-16"/>
-    <BuySection class="py-16"/>
-    <SecureSection class="py-16"/>
+    <CoinSection class="py-16" />
+    <BuySection class="py-16" />
+    <SecureSection class="py-16" />
     <BuildSection class="py-16" />
     <ExploreSection class="py-16" />
-    <Tutorials class="py-16" />
+    <TutorialsSection class="py-16" />
     <CommunitySection class="py-16" />
-    <Newsletter class="py-16"/>
+    <Newsletter class="py-16" />
   </div>
 </template>
 

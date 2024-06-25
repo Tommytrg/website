@@ -1,10 +1,12 @@
 <template>
-  <div class="flex flex-col items-center">
-    <i18n-t keypath="tutorials.title.text" class="title-h1 mb-lg" tag="h3">
-      <span class="text-wit-blue-500">{{ $t('tutorials.title.dot') }}</span>
-    </i18n-t>
+  <SectionBase :description="t('tutorials.description')">
+    <template v-slot:title>
+      <i18n-t keypath="tutorials.title.text" class="title-h1 mb-lg" tag="span">
+        <span class="text-wit-blue-500">{{ $t('tutorials.title.dot') }}</span>
+      </i18n-t>
+    </template>
 
-    <p class="description text mb-lg max-w-xl text-center">{{ t('tutorials.description') }}</p>
+    <template v-slot:content>
     <div class="grid grid-cols-3 max-w-5xl text-black-950">
       <TutorialsSubList
         v-for="tutorialList in tutorials"
@@ -13,7 +15,9 @@
         :title="tutorialList.title"
       />
     </div>
-  </div>
+    </template>
+  </SectionBase>
+
 </template>
 <script setup lang="ts">
 import type { TutorialList } from '@/types'

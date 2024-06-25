@@ -23,9 +23,10 @@
   },
   "what-is-witnet": {
     "title": {
-      "witnet": "Witnet 2.0",
-      "main": "{0} the Oracle for a Censorship-Resistant Future"
+      "main": "Build with confidence: {0}",
+      "witnet": "Witnet 2.0"
     },
+    "subtitle": "the Oracle for a Censorship-Resistant Future",
     "description": "Without a dependable oracle, smart contracts are susceptible to security breaches, manipulation, and financial losses. Witnet employs advanced cryptographic and Proof of Stake (PoS) economic mechanisms, ensuring that your smart contracts receive secure and trustworthy data inputs."
   },
   "coin": {

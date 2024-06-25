@@ -2,40 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
+
 @layer components {
   /* Titles */
   .title-h1 {
-    @apply font-title text-7xl;
+    @apply font-title text-9xl;
     font-weight: 600;
     /* line-height: 1; */
     line-height: 0.9;
     color: #232323;
   }
   .title-h2 {
-    @apply font-title text-5xl;
+    @apply font-title text-8xl;
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 1.2;
     color: #232323;
   }
 
 
   .title-h3 {
-    @apply font-title text-5xl;
+    @apply font-title text-7xl;
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 1;
     color: #232323;
   }
 
   .title-h4 {
     @apply font-title text-2xl;
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 1;
     color: #232323;
   }
 
   .text {
     @apply text-lg;
-    line-height: 1.5;
+    line-height: 1;
     color: #333;
   }
 

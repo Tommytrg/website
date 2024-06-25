@@ -1,15 +1,30 @@
 <template>
-      <RoundedIcon class="mr-md">
-        <slot></slot>
-        <!-- <GateIcon /> -->
-      </RoundedIcon>
-      <p class="text">{{ text }}</p>
+  <div class="flex items-center w-min">
+    <RoundedIcon class="mr-md">
+      <slot></slot>
+      <!-- <GateIcon /> -->
+    </RoundedIcon>
+    <p class="text-lg">{{ text }}</p>
+  </div>
 </template>
 
 <script setup>
 defineProps({
   text: {
     type: String,
+    required: true,
   },
 })
 </script>
+
+
+<style>
+/* TODO */
+.bg-white-50 {
+ color: black;
+}
+/* TODO */
+.bg-black-950 {
+ color: white;
+}
+</style>

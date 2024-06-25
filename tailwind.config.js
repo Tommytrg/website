@@ -25,12 +25,21 @@ export default {
         title: ['Outfit', 'sans-serif'],
         mono: ['NimbusMono', 'mono'],
       },
-      // fontSize: {
-      //   "9xl": "6.875rem",
-      //   "8xl": "5.625rem",
-      //   "4xl": "2.5rem",
-      //   "3xl": "1.75rem"
-      // }
+      fontSize: {
+        "9xl": "86px",
+        "8xl": "82px",
+        "7xl": "68px",
+        "6xl": "45px",
+        "5xl": "40px",
+        "4xl": "28px",
+        "3xl": "26px",
+        "2xl": "21px",
+        "xl": "19px",
+        "lg": "18px",
+        "base": "17px",
+        "sm": "15px",
+        "xs": "12px",
+      }
     },
     colors: {
       white: {

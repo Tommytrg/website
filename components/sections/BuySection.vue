@@ -1,26 +1,38 @@
 <template>
-<div class="flex flex-col">
-  <div class="flex flex-col items-center">
-    <h3 class="title-h1 mb-lg">{{ t('buy-section.title') }}</h3>
+  <SectionBase :description="t('buy-section.description')">
+    <template v-slot:title>
+      <span>
+        {{ t('buy-section.title') }}
+      </span>
+    </template>
 
-    <p class="description text mb-lg max-w-2xl text-center">{{ t('buy-section.description') }}</p>
-  </div>
+    <template v-slot:content>
+      <div class="grid grid-cols-3 p-xl gap-xl">
 
-  <div class="grid grid-cols-2 p-xl gap-xl">
-    <!-- <h2 class="title-h2">{{ $t('build-section.title') }}</h2> -->
-
-    <div class="flex items-center">
-      <IconWithText v-for="exchange in exchanges" :text="exchange.text">  
-        <GateIcon class="icon" v-if="exchange.logo ==='gate'"></GateIcon>
-        <MexcIcon class="icon" v-if="exchange.logo ==='mexc'"></MexcIcon>
-        <BitmartIcon class="icon" v-if="exchange.logo ==='bitmart'"></BitmartIcon>
-        <ChangellyIcon class="icon" v-if="exchange.logo ==='changelly'"></ChangellyIcon>
-        <SimpleswapIcon class="icon" v-if="exchange.logo ==='simpleswap'"></SimpleswapIcon>
-        <LetsexchangeIcon class="icon" v-if="exchange.logo ==='letsexchange'"></LetsExchangeIcon>
-      </IconWithText>
-    </div>
-  </div>
-</div>
+        <!-- <div class="flex items-center"> -->
+          <IconWithText v-for="exchange in exchanges" :text="exchange.name">
+            <GateIcon class="icon" v-if="exchange.logo === 'gate'"></GateIcon>
+            <MexcIcon class="icon" v-if="exchange.logo === 'mexc'"></MexcIcon>
+            <BitmartIcon
+              class="icon"
+              v-if="exchange.logo === 'bitmart'"
+            ></BitmartIcon>
+            <ChangellyIcon
+              class="icon"
+              v-if="exchange.logo === 'changelly'"
+            ></ChangellyIcon>
+            <SimpleswapIcon
+              class="icon"
+              v-if="exchange.logo === 'simpleswap'"
+            ></SimpleswapIcon>
+            <LetsexchangeIcon
+              class="icon"
+              v-if="exchange.logo === 'letsexchange'"
+            ></LetsexchangeIcon>
+          </IconWithText>
+      </div>
+    </template>
+  </SectionBase>
 </template>
 
 <script setup lang="ts">
@@ -32,35 +44,31 @@ import SimpleswapIcon from '@/assets/svg/simpleswap.svg?component'
 import LetsexchangeIcon from '@/assets/svg/letsexchange.svg?component'
 
 const { t } = useI18n()
-type Reason = {
-  title: string
-  description: string
-}
 const exchanges: Array<any> = [
   {
     name: t('buy-section.exchanges.gate'),
-    logo: 'gate'
+    logo: 'gate',
   },
   {
     name: t('buy-section.exchanges.mexc'),
-    logo: 'mexc'
+    logo: 'mexc',
   },
   {
     name: t('buy-section.exchanges.bitmart'),
-    logo: 'bitmart'
+    logo: 'bitmart',
   },
   {
     name: t('buy-section.exchanges.changelly'),
-    logo: 'changelly'
+    logo: 'changelly',
   },
   {
-    name: t('buy-section.exchanges.singleswap'),
-    logo: 'simpleswap'
+    name: t('buy-section.exchanges.simpleswap'),
+    logo: 'simpleswap',
   },
   {
     name: t('buy-section.exchanges.letsexchange'),
-    logo: 'letsexchange'
-  }
+    logo: 'letsexchange',
+  },
 ]
 </script>
 

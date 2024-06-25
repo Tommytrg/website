@@ -1,16 +1,17 @@
 <template>
-  <div class="!border-black section w-full flex justify-center p-xl">
-  <div class="flex flex-col items-center">
-    <h3 class="title-h1 mb-lg">{{ t('secure-section.title') }}</h3>
+  <SectionBase :description="t('secure-section.description')" background="blue">
+    <template v-slot:title>
+      <span>
+        {{ t('secure-section.title') }}
+      </span>
+    </template>
 
-    <p class="description text mb-lg max-w-2xl text-center">{{ t('secure-section.description') }}</p>
-    
-    <div>
-      <OutOfBoundariesCard></OutOfBoundariesCard>
-    </div>
-  </div>
-
-  </div>
+    <template v-slot:content>
+      <div>
+        <OutOfBoundariesCard></OutOfBoundariesCard>
+      </div>
+    </template>
+  </SectionBase>
 </template>
 
 <script setup lang="ts">
