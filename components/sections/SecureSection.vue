@@ -7,14 +7,30 @@
     </template>
 
     <template v-slot:content>
-      <div>
-        <OutOfBoundariesCard></OutOfBoundariesCard>
+      <div class="flex flex-col items-center lg:flex-row">
+        <OutOfBoundariesCard title="Sheikah" description="Choose Sheikah for a privacy-focused experience on Windows, macOS, and GNU/Linux, ideal for users who prioritize security and user-friendly interfaces."
+        action="Download Sheikah" 
+        >
+          <template v-slot:icon>
+            <SheikahIcon class="icon"></SheikahIcon>
+          </template>
+        </OutOfBoundariesCard>
+        
+        <OutOfBoundariesCard title="myWitWallet" description="Opt for myWitWallet for instant transactions without the wait for synchronization, perfect for quick and easy sending and receiving of WIT."
+        action="Download myWitWallet" 
+        >
+          <template v-slot:icon>
+            <MywitwalletIcon  class="icon"></MywitwalletIcon>
+          </template>
+        </OutOfBoundariesCard>
       </div>
     </template>
   </SectionBase>
 </template>
 
 <script setup lang="ts">
+import SheikahIcon from '@/assets/svg/sheikah.svg?component'
+import MywitwalletIcon from '@/assets/svg/mywitwallet.svg?component'
 import { URLS } from '@/constants'
 import ArrowTurnRightIcon from '@/assets/svg/arrow_turn_right.svg?component'
 
@@ -55,7 +71,4 @@ const explorers: Array<Explorer> = [
   background: #00E2ED;
 }
 
-.content {
-  max-width: 1100px;
-}
 </style>

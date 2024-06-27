@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center w-min">
+  <div class="flex items-center">
     <RoundedIcon class="mr-md">
       <slot></slot>
       <!-- <GateIcon /> -->

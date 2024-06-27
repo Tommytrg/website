@@ -4,7 +4,8 @@
     :class="[backgroundClass, `background-${background}`]"
   >
     <div class="flex flex-col max-w-7xl">
-      <div class="flex flex-col items-center">
+        <slot></slot>
+      <!-- <div class="flex flex-col items-center">
 
 
         <h2 v-if="headingType === 'h2'" class="title title-h2 mb-md">
@@ -21,7 +22,7 @@
           {{ description }}
         </p>
       </div>
-      <slot name="content"></slot>
+      <slot name="content"></slot> -->
     </div>
   </div>
 </template>

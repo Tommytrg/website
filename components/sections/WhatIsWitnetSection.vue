@@ -1,26 +1,24 @@
 <template>
-  <div class="section p-xl text-white flex flex-col items-center">
-
-     <i18n-t keypath="what-is-witnet.title.main" class="title-h2 text-white text-center" tag="h2">
+  <SectionBase :separator="true" headingType="h2" :description="$t('what-is-witnet.description')" background="blue">
+    <template v-slot:title>
+     <i18n-t keypath="what-is-witnet.title.main" class="title-h2 text-white text-center" tag="span">
         <span class="black block">{{ $t('what-is-witnet.title.witnet') }}</span>
       </i18n-t>
+    </template>
 
-    <DashesIcon class="m-xl dashes"/>
-
-    <p class="text -black text-center mb-xl">{{ $t('what-is-witnet.description') }}</p>
-   
-    <div class="flex mt-xl">
-      <CircleIcon class="left-circle"/>
-      <BashIcon class="icon mr-sm"/>
-      <StorageIcon class="icon mr-sm"/>
-      <SlashIcon class="icon mr-sm"/>
-      <LockIcon class="icon mr-sm"/>
-      <BulbIcon class="icon mr-sm"/>
-      <KeyIcon class="icon mr-sm"/>
-      <!-- TODO: center -->
-    </div>
-
-  </div>
+    <template v-slot:content>
+      <div class="flex content-center items-center flex-col md:flex-row md:mt-lg  mt-0 ">
+        <CircleIcon class="left-circle"/>
+        <BashIcon class="icon mr-sm"/>
+        <StorageIcon class="icon mr-sm"/>
+        <SlashIcon class="icon mr-sm"/>
+        <LockIcon class="icon mr-sm"/>
+        <BulbIcon class="icon mr-sm"/>
+        <KeyIcon class="icon"/>
+        <!-- TODO: center -->
+      </div>
+    </template>
+  </SectionBase>
 </template>
 
 <script setup>
@@ -31,14 +29,9 @@ import LockIcon from '@/assets/svg/lock.svg?component'
 import BulbIcon from '@/assets/svg/bulb.svg?component'
 import KeyIcon from '@/assets/svg/key.svg?component'
 import CircleIcon from '@/assets/svg/circle.svg?component'
-import DashesIcon from '@/assets/svg/dashes.svg?component'
-
 </script>
 
 <style scoped lang="scss">
-.dashes {
-  width: 100px;
-}
 
 .icon {
   z-index: 2;
@@ -85,4 +78,24 @@ import DashesIcon from '@/assets/svg/dashes.svg?component'
 .black {
   color: $black;
 }
+
+// @media only screen and (max-width: 800px) {
+//   .icon {
+//     z-index: 2;
+//     width: 70px;
+//   }
+// }
+// @media only screen and (max-width: 600px) {
+//   .icon {
+//     z-index: 2;
+//     width: 60px;
+//   }
+// }
+
+// @media only screen and (max-width: 400px) {
+//   .icon {
+//     z-index: 2;
+//     width: 50px;
+//   }
+// }
 </style>

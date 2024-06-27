@@ -7,7 +7,7 @@
     </template>
 
     <template v-slot:content>
-    <div class="grid grid-cols-3 max-w-5xl text-black-950">
+    <div class="grid grid-cols-1 max-w-5xl text-black-950 justify-items-center lg:grid-cols-3">
       <TutorialsSubList
         v-for="tutorialList in tutorials"
         :key="tutorialList.title"

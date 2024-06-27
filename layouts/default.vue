@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-6 w-full grid grid-rows-[max-content_1fr_max-content] bg-white dark:text-wit-blue-500 min-h-screen flex"
+    class="w-full grid grid-rows-[max-content_1fr_max-content] bg-white dark:text-wit-blue-500 min-h-screen"
   >
     <NuxtLayout name="navbar">
       <TopBar :nav-links="navLinks">

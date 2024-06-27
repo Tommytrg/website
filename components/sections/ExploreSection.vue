@@ -1,24 +1,25 @@
 <template>
-  <div class="!border-black section w-full flex justify-center p-xl">
-    <div class="content grid grid-cols-3">
-      <div class="flex">
+  <CenteredSection background="blue">
+    <div class="grid grid-cols-1 gap-8 2xl:grid-cols-3">
+      <div class="flex self-center w-96">
         <ArrowTurnRightIcon class="arrow m-md"/>
         <!-- <h2 class="title-h1 mr-sm">{{ $t('explore.title') }}</h2> -->
 
-        <i18n-t keypath="explore.title.main" class="title-h2 mr-sm white" tag="h2">
+        <i18n-t keypath="explore.title.main" class="text-7xl font-bold mr-sm white" tag="h2">
           <span class="text-black-950">{{ $t('explore.title.witnet') }}</span>
         </i18n-t>
       </div>
       
       <ExplorerLink
         v-for="explorer in explorers"
+        shadow-color="black"
         :key="explorer.title"
         :title="explorer.title"
         :description="explorer.description"
         :url="explorer.url"
       />
     </div>
-  </div>
+  </CenteredSection>
 </template>
 
 <script setup lang="ts">
@@ -46,6 +47,10 @@ const explorers: Array<Explorer> = [
 </script>
 
 <style scoped>
+.text-7xl {
+  line-height: 1;
+}
+
 .white {
   color: white;
 }
@@ -60,9 +65,5 @@ const explorers: Array<Explorer> = [
 
 .section {
   background: #00E2ED;
-}
-
-.content {
-  max-width: 1100px;
 }
 </style>

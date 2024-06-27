@@ -11,7 +11,7 @@
     </template>
 
     <template v-slot:content>
-      <div class="grid grid-cols-2 p-xl gap-xl">
+      <div class="grid grid-cols-1 p-xl gap-xl lg:grid-cols-2">
         <!-- <h2 class="title-h2">{{ $t('build-section.title') }}</h2> -->
         <BuildWithWitnet
           v-for="(reason, index) in reasons"

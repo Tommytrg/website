@@ -1,11 +1,11 @@
 <template>
-  <div class="card border rounded-lg px-xl py-md m-sm">
+  <div class="card border rounded-lg px-xl py-xl m-sm w-96" :class="['shadow-'+shadowColor]">
     <div class="flex justify-between items-center">
-      <h3 class="title-h4">{{ title }}</h3>
+      <h3 class="text-4xl text-black-950 font-semibold leading-4">{{ title }}</h3>
       <ArrowRightIcon class="arrow"/>
     </div>
     <hr class="hr my-md">
-    <p class="text">{{ description }}</p>
+    <p class="text-lg text-black-950">{{ description }}</p>
   </div>
 </template>
 
@@ -20,13 +20,24 @@ defineProps({
     type: String,
     required: true,
   },
+  shadowColor: {
+    type: String,
+    required: true
+  }
 })
 </script>
 
 <style scoped>
 .card {
   background: white;
-  box-shadow: 7px 10px 0px rgb(0, 0, 0);
+}
+
+.shadow-black {
+  box-shadow: 7px 10px 0px #232323
+}
+
+.shadow-blue {
+  box-shadow: 7px 10px 0px #00E2ED;
 }
 
 .title-h2 {

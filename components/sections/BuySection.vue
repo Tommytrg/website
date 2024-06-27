@@ -7,7 +7,7 @@
     </template>
 
     <template v-slot:content>
-      <div class="grid grid-cols-3 p-xl gap-xl">
+      <div class="max-w-4xl grid p-lg gap-xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center md:justify-items-start">
 
         <!-- <div class="flex items-center"> -->
           <IconWithText v-for="exchange in exchanges" :text="exchange.name">
@@ -77,7 +77,7 @@ const exchanges: Array<any> = [
   color: $blue;
 }
 .icon {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 </style>
