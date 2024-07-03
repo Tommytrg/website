@@ -15,9 +15,14 @@
     /* line-height: 1; */
     line-height: 0.9;
     color: #232323;
+
   }
   .title-h2 {
-    @apply font-title text-8xl;
+    /* @apply font-title text-8xl; */
+    /* @apply text-7xl; */
+    @apply text-5xl sm:text-6xl lg:text-7xl;
+    /* @apply lg:text-7xl; */
+
     font-weight: 600;
     line-height: 1.2;
     color: #232323;
@@ -45,7 +50,7 @@
   }
 
   .text {
-    @apply text-2xl;
+    @apply text-xl;
     line-height: 1.1;
     color: #333;
   }

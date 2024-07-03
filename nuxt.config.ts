@@ -10,7 +10,16 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/i18n', '@nuxtjs/color-mode'],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/color-mode',     ['nuxt-mail', {
+      message: {
+        to: 'foo@bar.de',
+      },
+      smtp: {
+        host: "smtp.example.com",
+        port: 587,
+      },
+    }],
+  ],
   colorMode: {
     preference: 'system', // default value of $colorMode.preference
     fallback: 'dark', // fallback value if not system preference found

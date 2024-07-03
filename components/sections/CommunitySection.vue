@@ -1,7 +1,11 @@
 <template>
   <SectionBase :description="t('secure-section.description')" background="black">
     <template v-slot:title>
-      <span>{{ $t('community.title') }}</span>
+      <!-- <span>{{ $t('community.title.text') }}</span> -->
+      <i18n-t keypath="community.title.text" class="title-h2 mb-lg text-white-50" tag="span">
+        <span class="text-wit-blue-500">{{ $t('community.title.dot') }}</span>
+      </i18n-t>
+
     </template>
 
     <template v-slot:content>

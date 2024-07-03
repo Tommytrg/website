@@ -26,19 +26,29 @@ export default {
         mono: ['NimbusMono', 'mono'],
       },
       fontSize: {
-        '9xl': '86px',
-        '8xl': '82px',
-        '7xl': '68px',
-        '6xl': '45px',
-        '5xl': '40px',
-        '4xl': '28px',
-        '3xl': '26px',
-        '2xl': '21px',
-        xl: '19px',
-        lg: '18px',
-        base: '17px',
-        sm: '15px',
-        xs: '12px',
+        // '9xl': '86px',
+        // '8xl': '82px',
+        // '7xl': '68px',
+        // '6xl': '45px',
+        // '5xl': '40px',
+        // '4xl': '28px',
+        // '3xl': '26px',
+        // '2xl': '21px',
+        // xl: '19px',
+        // lg: '18px',
+        // base: '17px',
+        // sm: '14px',
+        // xs: '12px',
+        // text-xl	font-size: 1.25rem; /* 20px */
+        // text-2xl	font-size: 1.5rem; /* 24px */
+        // text-3xl	font-size: 1.875rem; /* 30px */
+        // text-4xl	font-size: 2.25rem; /* 36px */
+        // text-5xl	font-size: 3rem; /* 48px */
+        // text-6xl	font-size: 3.75rem; /* 60px */
+        // text-7xl	font-size: 4.5rem; /* 72px */
+        // text-8xl	font-size: 6rem; /* 96px */
+        // text-9xl	font-size: 8rem; /* 128px */
+
       },
       spacing: {
         sm: '8px',

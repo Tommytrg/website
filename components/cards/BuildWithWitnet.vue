@@ -1,11 +1,11 @@
 <template>
   <div class="card border-2 border-black-950 rounded-lg px-xl py-lg">
     <div class="flex items-center">
-      <div class="circle border border-black-950 rounded-full h-fit p-sm mr-md text-black-950">{{ formattedIndex }}</div>
+      <div class="text-xl circle border border-black-950 rounded-full h-fit p-sm mr-md text-black-950">{{ formattedIndex }}</div>
       <h3 class="title-h4">{{ title }}</h3>
     </div>
     <hr class="hr my-md">
-    <p class="text">{{ description }}</p>
+    <p class="text-base">{{ description }}</p>
   </div>
 </template>
 
@@ -49,7 +49,7 @@ return props.index.toLocaleString('en-US', {
 
 .circle {
   line-height: 1;
-  font-size: 24px;
+  // font-size: 24px;
   height: 48px;
   min-width: 48px;
   align-content: center;

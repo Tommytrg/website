@@ -11,7 +11,7 @@
         </template>
         <template v-for="link in navLinks" :key="link.key" #[link.key]>
           <InnerLink :hash="link.key">
-            <span class="slash">/</span>{{ link.locale }}
+            <span class="slash text-wit-blue-500">/</span>{{ link.locale }}
           </InnerLink>
         </template>
       </TopBar>
@@ -35,28 +35,22 @@ const { t } = useI18n()
 
 const navLinks: Array<{ key: string }> = [
   {
-    key: 'oracle',
-    to: '/oracle',
-    rel: 'oracle',
-    locale: t('nav_bar.route.oracle'),
+    key: 'stake',
+    to: '/stake',
+    rel: 'stake',
+    locale: t('nav_bar.route.stake'),
   },
   {
-    key: 'coin',
-    to: '/coin',
-    rel: 'coin',
-    locale: t('nav_bar.route.coin'),
+    key: 'buy',
+    to: '/buy',
+    rel: 'buy',
+    locale: t('nav_bar.route.buy'),
   },
   {
-    key: 'apps',
-    to: '/apps',
-    rel: 'apps',
-    locale: t('nav_bar.route.apps'),
-  },
-  {
-    key: 'community',
-    to: '/community',
-    rel: 'community',
-    locale: t('nav_bar.route.community'),
+    key: 'build',
+    to: '/build',
+    rel: 'build',
+    locale: t('nav_bar.route.build'),
   },
 ]
 </script>

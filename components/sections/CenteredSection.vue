@@ -3,11 +3,7 @@
     class="w-full flex justify-center"
     :class="[backgroundClass, `background-${background}`]"
   >
-  <p>
-
-  asdfasdf
-  </p>
-    <div class="flex flex-col max-w-7xl">--
+    <div class="flex flex-col max-w-7xl">
         <slot></slot>
     </div>
   </div>
@@ -25,7 +21,7 @@ const props = defineProps({
     default: 'white',
   },
   separator: {
-    type: String,
+    type: Boolean,
     required: false,
   },
   headingType: {

@@ -5,11 +5,11 @@
     <RoundedIcon class="rounded-icon">
       <slot name="icon"></slot>
     </RoundedIcon>
-    <h3 class="text-4xl text-black-950 font-semibold leading-4 px-14">
+    <h3 class="text-2xl text-black-950 font-semibold leading-4 px-14">
       {{ title }}
     </h3>
     <hr class="hr my-md ml-14" />
-    <p class="text-lg text-black-950 mb-xl">
+    <p class="text-base text-black-950 mb-xl">
       {{ description }}
     </p>
 
@@ -36,13 +36,6 @@ const props = defineProps({
     required: true
   }
 })
-
-// const formattedIndex = computed(() => {
-// return props.index.toLocaleString('en-US', {
-//     minimumIntegerDigits: 2,
-//     useGrouping: false
-//   })
-// })
 </script>
 
 <style scoped lang="scss">
@@ -61,14 +54,9 @@ const props = defineProps({
   left: -25px;
 }
 
-.slashes {
-}
 .action {
   position: absolute;
   right: -60px;
-}
-
-.icon {
 }
 
 .card {

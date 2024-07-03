@@ -1,7 +1,7 @@
 <template>
   <SectionBase :separator="true" headingType="h2" :description="$t('what-is-witnet.description')" background="blue">
     <template v-slot:title>
-     <i18n-t keypath="what-is-witnet.title.main" class="title-h2 text-white text-center" tag="span">
+     <i18n-t keypath="what-is-witnet.title.main" class=" text-4xl sm:text-5xl lg:text-6xl text-white text-center" tag="span">
         <span class="black block">{{ $t('what-is-witnet.title.witnet') }}</span>
       </i18n-t>
     </template>

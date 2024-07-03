@@ -1,7 +1,7 @@
 <template>
   <SectionBase :description="t('tutorials.description')">
     <template v-slot:title>
-      <i18n-t keypath="tutorials.title.text" class="title-h1 mb-lg" tag="span">
+      <i18n-t keypath="tutorials.title.text" class="title-h2 mb-lg" tag="span">
         <span class="text-wit-blue-500">{{ $t('tutorials.title.dot') }}</span>
       </i18n-t>
     </template>

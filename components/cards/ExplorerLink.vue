@@ -1,11 +1,11 @@
 <template>
-  <div class="card border rounded-lg px-xl py-xl m-sm w-96" :class="['shadow-'+shadowColor]">
+  <div class="card border rounded-lg px-xl py-xl m-sm max-w-md" :class="['shadow-'+shadowColor]">
     <div class="flex justify-between items-center">
-      <h3 class="text-4xl text-black-950 font-semibold leading-4">{{ title }}</h3>
+      <h3 class="text-2xl text-black-950 font-semibold leading-4">{{ title }}</h3>
       <ArrowRightIcon class="arrow"/>
     </div>
     <hr class="hr my-md">
-    <p class="text-lg text-black-950">{{ description }}</p>
+    <p class="text-base text-black-950">{{ description }}</p>
   </div>
 </template>
 

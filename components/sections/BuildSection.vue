@@ -3,7 +3,7 @@
     <template v-slot:title>
       <i18n-t
         keypath="build-section.title.key_features"
-        class="title-h1 mb-lg"
+        class="title-h2 mb-lg max-w-screen-sm"
         tag="span"
       >
         <span class="blue">{{ $t('build-section.title.dot') }}</span>

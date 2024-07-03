@@ -1,20 +1,22 @@
 <template>
   <div class="grid grid-flow-row overflow-hidden">
     <HeroSection />
-    <WhatIsWitnetSection class="py-16" />
-    <CoinSection class="py-16" />
-    <BuySection class="py-16" />
-    <SecureSection class="py-16" />
-    <BuildSection class="py-16" />
-    <ExploreSection class="py-16" />
-    <TutorialsSection class="py-16" />
-    <CommunitySection class="py-16" />
-    <Newsletter class="py-16" />
+    <WhatIsWitnetSection class="padding-y" />
+    <CoinSection class="padding-y" />
+    <BuySection class="padding-y" />
+    <SecureSection class="padding-y" />
+    <BuildSection class="padding-y" />
+    <ExploreSection class="padding-y px-4" />
+    <TutorialsSection class="padding-y" />
+    <CommunitySection class="padding-y" />
+    <Newsletter class="padding-y" />
+    <FooterSection class="padding-y" />
   </div>
 </template>
 
 <style scoped>
-.py-16 {
-  padding: 96px 0;
+.padding-y {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 </style>
