@@ -2,24 +2,30 @@
   <CenteredSection background="black">
     <div class="text-white-50 flex justify-center">
       <div class="footer p-4">
-        <div class="top grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] justify-between border-b border-white-50 pb-10 gap-x-10 gap-y-7">
+        <div
+          class="top flex flex-col md:flex-row justify-between border-b border-white-50 pb-10 gap-x-10 gap-y-7"
+        >
           <div
-            v-for="section in footerLinks"
-            :key="section.title"
-            class="py-2 flex flex-col"
+            class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] md:grid-cols-[repeat(3,150px)]"
           >
-            <p class="title font-bold text-sm">
-              {{ $t(`footer.links.${section.title}.title`) }}
-            </p>
-            <a
-              v-for="link in section.links"
-              :key="link.text"
-              class="py-1 text-sm"
-              :href="link.url"
-              target="_blank"
+            <div
+              v-for="section in footerLinks"
+              :key="section.title"
+              class="py-2 flex flex-col"
             >
-              {{ $t(link.text) }}
-            </a>
+              <p class="title font-bold text-sm">
+                {{ $t(`footer.links.${section.title}.title`) }}
+              </p>
+              <a
+                v-for="link in section.links"
+                :key="link.text"
+                class="py-1 text-sm"
+                :href="link.url"
+                target="_blank"
+              >
+                {{ $t(link.text) }}
+              </a>
+            </div>
           </div>
           <div class="text-sm col-span-3">
             <AdoIcon class="mb-2 w-14" />
@@ -37,29 +43,37 @@
         <div class="flex items-center gap-4 pt-10">
           <Wit2Icon class="w-2xl white" name="witnet_dark" />
           <div>
-          <i18n-t keypath="footer.copyright.base1" class="copyright max-w-100 text-sm" tag="p">
-            <span>2018-{{ new Date().getFullYear() }}</span>
-            <a
-              class="underline py-1 text-sm"
-              href="https://witnet.foundation"
-              target="_blank"
-              >{{ $t('footer.copyright.witnet_foundation') }}</a
+            <i18n-t
+              keypath="footer.copyright.base1"
+              class="copyright max-w-100 text-sm"
+              tag="p"
             >
-            <a
-              class="underline py-1 text-sm"
-              href="https://creativecommons.org/publicdomain/zero/1.0/"
-              target="_blank"
-              >{{ $t('footer.copyright.license') }}</a
+              <span>2018-{{ new Date().getFullYear() }}</span>
+              <a
+                class="underline py-1 text-sm"
+                href="https://witnet.foundation"
+                target="_blank"
+                >{{ $t('footer.copyright.witnet_foundation') }}</a
+              >
+              <a
+                class="underline py-1 text-sm"
+                href="https://creativecommons.org/publicdomain/zero/1.0/"
+                target="_blank"
+                >{{ $t('footer.copyright.license') }}</a
+              >
+            </i18n-t>
+            <i18n-t
+              keypath="footer.copyright.base2"
+              class="copyright max-w-100 text-sm"
+              tag="p"
             >
-          </i18n-t>
-          <i18n-t keypath="footer.copyright.base2" class="copyright max-w-100 text-sm" tag="p">
-            <a
-              class="underline py-1 text-sm"
-              href="https://creativecommons.org/publicdomain/zero/1.0/"
-              target="_blank"
-              >{{ $t('footer.copyright.license') }}</a
-            >
-          </i18n-t>
+              <a
+                class="underline py-1 text-sm"
+                href="https://creativecommons.org/publicdomain/zero/1.0/"
+                target="_blank"
+                >{{ $t('footer.copyright.license') }}</a
+              >
+            </i18n-t>
           </div>
         </div>
       </div>
@@ -171,18 +185,18 @@ const footerLinks = getFooterLinks(footerSections)
 </script>
 
 <style scoped lang="scss">
-  // .bottom {
-  //   grid-template-columns: max-content 1fr;
-  //   grid-template-rows: max-content;
-  //   .copyright {
-  //     grid-row: 2;
-  //     grid-column: 2;
-  //   }
-  //   .logo {
-  //     grid-row: 2;
-  //     grid-column: 1;
-  //   }
-  // }
+// .bottom {
+//   grid-template-columns: max-content 1fr;
+//   grid-template-rows: max-content;
+//   .copyright {
+//     grid-row: 2;
+//     grid-column: 2;
+//   }
+//   .logo {
+//     grid-row: 2;
+//     grid-column: 1;
+//   }
+// }
 
 // @media (min-width: 600px) {
 //   .bottom {

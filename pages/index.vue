@@ -1,16 +1,16 @@
 <template>
   <div class="grid grid-flow-row overflow-hidden">
-    <HeroSection />
-    <WhatIsWitnetSection class="padding-y" />
-    <CoinSection class="padding-y" />
-    <BuySection class="padding-y" />
-    <SecureSection class="padding-y" />
-    <BuildSection class="padding-y" />
-    <ExploreSection class="padding-y px-4" />
-    <TutorialsSection class="padding-y" />
-    <CommunitySection class="padding-y" />
-    <Newsletter class="padding-y" />
-    <FooterSection class="padding-y" />
+    <!-- <HeroSection /> -->
+    <!-- <WhatIsWitnetSection class="padding-y px-4" /> -->
+    <!-- <CoinSection class="padding-y px-4" /> -->
+    <!-- <BuySection class="padding-y px-4" /> -->
+    <!-- <SecureSection class="padding-y px-4" /> -->
+    <!-- <BuildSection class="padding-y px-4" /> -->
+    <!-- <ExploreSection class="padding-y px-4" /> -->
+    <!-- <TutorialsSection class="padding-y px-4" /> -->
+    <!-- <CommunitySection class="padding-y px-4" /> -->
+    <!-- <Newsletter class="padding-y px-4" /> -->
+    <FooterSection class="padding-y px-4" />
   </div>
 </template>
 
