@@ -1,21 +1,33 @@
 <template>
-  <SectionBase :separator="true" headingType="h2" :description="$t('what-is-witnet.description')" background="blue">
+  <SectionBase
+    :separator="true"
+    headingType="h2"
+    :description="$t('what-is-witnet.description')"
+    background="blue"
+  >
     <template v-slot:title>
-     <i18n-t keypath="what-is-witnet.title.main" class=" text-4xl sm:text-5xl lg:text-6xl text-white text-center" tag="span">
+      <i18n-t
+        keypath="what-is-witnet.title.main"
+        class="text-4xl sm:text-5xl lg:text-6xl text-white text-center"
+        tag="span"
+      >
         <span class="black block">{{ $t('what-is-witnet.title.witnet') }}</span>
       </i18n-t>
     </template>
 
     <template v-slot:content>
-      <div class="flex content-center items-center flex-col md:flex-row md:mt-lg  mt-0 ">
-        <CircleIcon class="left-circle"/>
-        <BashIcon class="icon mr-sm"/>
-        <StorageIcon class="icon mr-sm"/>
-        <SlashIcon class="icon mr-sm"/>
-        <LockIcon class="icon mr-sm"/>
-        <BulbIcon class="icon mr-sm"/>
-        <KeyIcon class="icon"/>
-        <!-- TODO: center -->
+      <div
+        class="flex content-center items-center justify-center flex-row mt-lg"
+      >
+        <CircleIcon
+          class="relative z-10 w-10 top-5 left-5 sm:w-20 sm:top-7 sm:left-7"
+        />
+        <BashIcon class="z-20 mr-sm w-10 sm:w-20" />
+        <StorageIcon class="z-20 mr-sm w-10 sm:w-20" />
+        <SlashIcon class="z-20 mr-sm w-10 sm:w-20" />
+        <LockIcon class="z-20 mr-sm w-10 sm:w-20" />
+        <BulbIcon class="z-20 mr-sm w-10 sm:w-20" />
+        <KeyIcon class="z-20 mr-sm w-10 sm:w-20" />
       </div>
     </template>
   </SectionBase>
@@ -32,70 +44,12 @@ import CircleIcon from '@/assets/svg/circle.svg?component'
 </script>
 
 <style scoped lang="scss">
-
 .icon {
   z-index: 2;
-  width: 90px;
 }
 
 .left-circle {
-  width: 100px;
-  height: 100px;
   position: relative;
-  top: 30px;
-  left: 30px;
   z-index: 1;
 }
-
-.right-circle {
-  width: 100px;
-  position: relative;
-  bottom: 30px;
-  right: 30px;
-  z-index: 1;
-}
-
-.section {
-  background-color: #00E2ED;
-}
-
-.text-white {
-  color: white;
-}
-
-.text-black{
-  color: black;
-}
-
-.title-h2 {
-  max-width: 475px;
-}
-.text {
-  max-width: 700px;
-  margin-bottom: 48px;
-}
-
-.black {
-  color: $black;
-}
-
-// @media only screen and (max-width: 800px) {
-//   .icon {
-//     z-index: 2;
-//     width: 70px;
-//   }
-// }
-// @media only screen and (max-width: 600px) {
-//   .icon {
-//     z-index: 2;
-//     width: 60px;
-//   }
-// }
-
-// @media only screen and (max-width: 400px) {
-//   .icon {
-//     z-index: 2;
-//     width: 50px;
-//   }
-// }
 </style>

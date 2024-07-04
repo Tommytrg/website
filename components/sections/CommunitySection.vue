@@ -1,25 +1,27 @@
 <template>
-  <SectionBase :description="t('secure-section.description')" background="black">
+  <SectionBase
+    :description="t('secure-section.description')"
+    background="black"
+  >
     <template v-slot:title>
-      <!-- <span>{{ $t('community.title.text') }}</span> -->
-      <i18n-t keypath="community.title.text" class="title-h2 mb-lg text-white-50" tag="span">
+      <i18n-t
+        keypath="community.title.text"
+        class="title-h2 mb-lg text-white-50"
+        tag="span"
+      >
         <span class="text-wit-blue-500">{{ $t('community.title.dot') }}</span>
       </i18n-t>
-
     </template>
 
     <template v-slot:content>
-    <div class="flex justify-center">
-     <IconWithText class="grow" :text="$t('community.advocate-program')">
-      <MegaphoneIcon class="icon" />
-     </IconWithText>
-     <IconWithText class="grow" :text="$t('community.grant-program')">
-      <BadgeIcon class="icon" />
-     </IconWithText>
-
-    <!-- <a :href="URLS.advocateProgram">{{ $t('community.advocate-program') }}</a> -->
-    <!-- <a :href="URLS.grantProgram">{{ $t('community.grant-program') }}</a> -->
-    </div>
+      <div class="flex w-full items-center flex-col justify-between sm:flex-row">
+        <IconWithText class="w-72 mb-4 sm:mb-0" :text="$t('community.advocate-program')">
+          <MegaphoneIcon class="icon" />
+        </IconWithText>
+        <IconWithText class="w-72" :text="$t('community.grant-program')">
+          <BadgeIcon class="icon" />
+        </IconWithText>
+      </div>
     </template>
   </SectionBase>
 </template>

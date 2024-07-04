@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div
     class="out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
   >
@@ -18,6 +18,30 @@
       <ArrowButton class="action">{{ action }}</ArrowButton>
     </div>
   </div>
+</template> -->
+
+<template>
+<div>
+
+  <div
+    class="out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
+  >
+    <RoundedIcon class="rounded-icon">
+      <slot name="icon"></slot>
+    </RoundedIcon>
+    <h3 class="text-2xl text-black-950 font-semibold leading-4 pl-14">
+      {{ title }}
+    </h3>
+    <hr class="hr my-md ml-14" />
+    <p class="text-base text-black-950 mb-xl">
+      {{ description }}
+    </p>
+
+    <div class="flex items-center">
+      <ArrowButton class="action">{{ action }}</ArrowButton>
+    </div>
+  </div>
+</div>
 </template>
 
 <script setup lang="ts">
@@ -40,23 +64,23 @@ const props = defineProps({
 
 <style scoped lang="scss">
 :slotted(svg) {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height:  60px;
 }
 .out-of-boundaries {
   // add margin equal to out of boundaries
-  margin: 25px 60px 25px 25px;
+  margin: 15px 30px 25px 15px;
 }
 
 .rounded-icon {
   position: absolute;
-  top: -25px;
-  left: -25px;
+  top: -15px;
+  left: -15px;
 }
 
 .action {
   position: absolute;
-  right: -60px;
+  right: -30px;
 }
 
 .card {
