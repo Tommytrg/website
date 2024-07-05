@@ -8,13 +8,13 @@
 
     <template v-slot:content>
       <div class="flex flex-col items-center lg:flex-row">
-        <!-- <OutOfBoundariesCard title="Sheikah" description="Choose Sheikah for a privacy-focused experience on Windows, macOS, and GNU/Linux, ideal for users who prioritize security and user-friendly interfaces."
+        <OutOfBoundariesCard title="Sheikah" description="Choose Sheikah for a privacy-focused experience on Windows, macOS, and GNU/Linux, ideal for users who prioritize security and user-friendly interfaces."
         action="Download Sheikah" 
         >
           <template v-slot:icon>
             <SheikahIcon class="icon"></SheikahIcon>
           </template>
-        </OutOfBoundariesCard> -->
+        </OutOfBoundariesCard>
         
         <OutOfBoundariesCard title="myWitWallet" description="Opt for myWitWallet for instant transactions without the wait for synchronization, perfect for quick and easy sending and receiving of WIT."
         action="Download myWitWallet" 

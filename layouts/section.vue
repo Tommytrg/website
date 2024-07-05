@@ -2,7 +2,7 @@
   <div :class="fullBackground ? `wide-section ${height}` : `section ${height}`">
     <div
       v-if="fullBackground"
-      class="section"
+      class="section w-full px-12 my-0 mx-auto max-w-2xl"
       :style="{ background: backgroundColor }"
     >
       <slot></slot>
@@ -24,7 +24,7 @@ export default {
     },
     height: {
       type: String,
-      default: null,
+      default: "",
     },
   },
 }
@@ -32,19 +32,16 @@ export default {
 
 <style scoped>
 .section {
-  padding: 48px;
-  margin: 0 auto;
-  max-width: 1100px;
-  width: 100%;
+  /* max-width: 1100px; */
 }
 
 .wide-section {
-  width: 100%;
+  /* width: 100%; */
 }
 
 @media (max-width: 350px) {
   .section {
-    padding: 32px 16px;
+    /* padding: 32px 16px; */
   }
 }
 </style>

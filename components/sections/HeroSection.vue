@@ -1,31 +1,26 @@
 <template>
-  <NuxtLayout
-    name="section"
-    :height="'h-lg-y-screen sm:h-[max-content] max-h-[900px]'"
-  >
+  <div class="px-4">
     <div
-      class="h-full grid auto-rows-min content-center gap-y-lg justify-items-center relative"
+      class="flex flex-col items-center gap-y-lg justify-items-center relative"
     >
-      <DottedBg
-        class="absolute z-0 h-2-md-y-screen max-h-[700px] overflow-hidden"
-      />
-      <Plus
-        class="absolute left-xl top-[450px] z-10 overflow-hidden sm:hidden"
-      />
-      <Zigzag
-        class="absolute left-xl bottom-xl z-10 overflow-hidden sm:hidden"
-      />
-      <SquareDots class="absolute left-xl top-xl z-10 sm:hidden" />
-      <Plus
-        class="absolute right-xl top-[300px] z-10 overflow-hidden sm:hidden"
-      />
-      <Zigzag
-        class="absolute right-xl top-xl z-10 overflow-hidden rotate-90 sm:hidden"
-      />
-      <SquareDots class="absolute right-xl bottom-xl z-10 sm:hidden" />
-      <div class="grid auto-rows-min gap-y-lg max-w-c-3xl z-20">
-        <i18n-t keypath="hero.title.main" class="title-h1 text-center" tag="h1">
-          <span class="blue">{{ $t('hero.title.gradient') }}</span>
+      <DottedBg class="absolute z-0 h-2-md-y-screen max-h-[700px] w-auto" />
+
+      <SquareDots class="squaredots1" />
+      <Plus class="plus1" />
+      <Zigzag class="zigzag1" />
+
+      <Zigzag class="zigzag2" />
+      <Plus class="plus2" />
+      <SquareDots class="squaredots2" />
+
+      <!-- <Plus class="absolute right-xl top-[300px] z-10" /> -->
+      <!-- <SquareDots class="absolute left-xl top-xl z-10" /> -->
+      <!-- <Plus class="absolute right-xl top-[300px] z-10" /> -->
+      <!-- <Zigzag class="absolute right-xl top-xl z-10 rotate-90" /> -->
+      <!-- <SquareDots class="absolute right-xl bottom-xl z-10" /> -->
+      <div class="max-w-c-3xl z-20">
+        <i18n-t keypath="hero.title.main" class="title-h2 text-center mb-8" tag="h1">
+          <span class="text-wit-blue-500">{{ $t('hero.title.gradient') }}</span>
         </i18n-t>
 
         <h2 class="text text-center">{{ $t('hero.description') }}</h2>
@@ -37,7 +32,7 @@
 
       <ArrowDownIcon class="m-xl z-20" />
     </div>
-  </NuxtLayout>
+  </div>
 </template>
 
 <script setup>
@@ -49,4 +44,53 @@ import Zigzag from '@/assets/svg/zigzag.svg?component'
 import SquareDots from '@/assets/svg/square-dots.svg?component'
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.squaredots1 {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  top: -16px;
+  left: 0px;
+}
+
+.plus1{
+  position: absolute;
+  width: 15px;
+  height: auto;
+  top: 150px;
+  left: -10px;
+}
+
+.zigzag1 {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  top: 500px;
+  left: 15px;
+}
+
+.zigzag2 {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  top: 30px;
+  right: 0px;
+}
+
+.plus2 {
+  position: absolute;
+  width: 15px;
+  height: auto;
+  top: 130px;
+  right: 0px;
+}
+
+.squaredots2 {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  top: 500px;
+  right: 16px;
+}
+
+</style>

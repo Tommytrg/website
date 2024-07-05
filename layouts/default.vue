@@ -21,7 +21,7 @@
     <!-- <client-only>
       <ThemeSwitch class="theme-switch" />
     </client-only> -->
-    <div class="grid grid-auto mt-16">
+    <div class="grid grid-auto mt-8">
       <slot></slot>
     </div>
     <!-- <FooterSection /> -->
