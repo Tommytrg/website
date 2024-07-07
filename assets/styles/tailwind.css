@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-
-
 @layer components {
   /* Titles */
   .title-h1 {
@@ -24,7 +19,7 @@
     /* @apply lg:text-7xl; */
 
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.1;
     color: #232323;
   }
 

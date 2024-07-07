@@ -8,10 +8,12 @@
     <template v-slot:title>
       <i18n-t
         keypath="what-is-witnet.title.main"
-        class="text-4xl sm:text-5xl lg:text-6xl text-white text-center"
+        class="text-4xl sm:text-5xl lg:text-6xl text-white text-center font-normal"
         tag="span"
       >
-        <span class="black block">{{ $t('what-is-witnet.title.witnet') }}</span>
+        <span class="font-bold">
+          <br />
+          {{ $t('what-is-witnet.title.witnet') }}</span>
       </i18n-t>
     </template>
 
@@ -20,14 +22,14 @@
         class="flex content-center items-center justify-center flex-row mt-lg"
       >
         <CircleIcon
-          class="relative z-10 w-10 top-5 left-5 sm:w-20 sm:top-7 sm:left-7"
+          class="relative z-10 w-10 h-auto top-5 left-5 sm:w-20 sm:top-7 sm:left-7"
         />
-        <BashIcon class="z-20 mr-sm w-10 sm:w-20" />
-        <StorageIcon class="z-20 mr-sm w-10 sm:w-20" />
-        <SlashIcon class="z-20 mr-sm w-10 sm:w-20" />
-        <LockIcon class="z-20 mr-sm w-10 sm:w-20" />
-        <BulbIcon class="z-20 mr-sm w-10 sm:w-20" />
-        <KeyIcon class="z-20 mr-sm w-10 sm:w-20" />
+        <BashIcon class="z-20 mr-sm w-10 h-auto sm:w-20" />
+        <StorageIcon class="z-20 mr-sm w-10 h-auto sm:w-20" />
+        <SlashIcon class="z-20 mr-sm w-10 h-auto sm:w-20" />
+        <LockIcon class="z-20 mr-sm w-10 h-auto sm:w-20" />
+        <BulbIcon class="z-20 mr-sm w-10 h-auto sm:w-20" />
+        <KeyIcon class="z-20 mr-sm w-10 h-auto sm:w-20" />
       </div>
     </template>
   </SectionBase>

@@ -7,11 +7,11 @@
       <div class="flex flex-col items-center">
 
 
-        <h2 v-if="headingType === 'h2'" class="title title-h2 mb-md text-center max-w-screen-md">
+        <h2 v-if="headingType === 'h2'" class="title title-h2 text-center max-w-screen-md" :class="{ 'mb-md': !separator }">
           <slot name="title"></slot>
         </h2>
         
-        <h3 v-if="headingType === 'h3'" class="title title-h2 mb-md text-center max-w-screen-md">
+        <h3 v-if="headingType === 'h3'" class="title title-h2 text-center max-w-screen-md" :class="{ 'mb-md': !separator }">
           <slot name="title"></slot>
         </h3>
 
