@@ -2,7 +2,7 @@
   <!-- extra div to be able to style margins from parent without collision with inner styles -->
   <div>
     <div
-      class="card border rounded-lg px-xl py-xl mr-sm mb-sm max-w-md"
+      class="card border rounded-lg px-xl py-xl mr-sm mb-sm max-w-md h-full"
       :class="['shadow-' + shadowColor]"
     >
       <div class="flex justify-between items-center">

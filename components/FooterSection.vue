@@ -98,7 +98,7 @@ const footerSections = {
 }
 
 import snakeCase from 'lodash.snakecase'
-import  { URLS } from "../constants.js"
+import  { URLS } from "../constants"
 
 function getFooterLinks(sections) {
   return Object.entries(sections).map(([sectionName, sectionItems]) => ({

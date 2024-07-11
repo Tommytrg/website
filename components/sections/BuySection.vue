@@ -1,14 +1,14 @@
 <template>
   <SectionBase :description="t('buy-section.description')">
     <template v-slot:title>
-      <span>
+      <span id="buy">
         {{ t('buy-section.title') }}
       </span>
     </template>
 
     <template v-slot:content>
       <div
-        class="max-w-4xl grid p-lg gap-xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center md:justify-items-start"
+        class="max-w-4xl grid p-lg pb-0 gap-xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center md:justify-items-start"
       >
         <IconWithText
           v-for="exchange in exchanges"
@@ -54,12 +54,12 @@ const exchanges: Array<any> = [
   {
     name: t('buy-section.exchanges.gate'),
     logo: 'gate',
-    link: 'https://www.gate.io/trade/WIT_USDT',
+    link: URLS.gate,
   },
   {
     name: t('buy-section.exchanges.mexc'),
     logo: 'mexc',
-    link: 'https://www.mexc.com/exchange/WIT_USDT',
+    link: URLS.mexc,
   },
   {
     name: t('buy-section.exchanges.bitmart'),
@@ -79,7 +79,7 @@ const exchanges: Array<any> = [
   {
     name: t('buy-section.exchanges.letsexchange'),
     logo: 'letsexchange',
-    link: "https://letsexchange.io/coin/wit"
+    link: URLS.letsexchange
   },
 ]
 </script>

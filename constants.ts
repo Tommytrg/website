@@ -37,7 +37,7 @@ export const URLS: Record<string, string> = {
   medium: 'https://medium.com/witnet',
   mexc: 'https://www.mexc.com/exchange/WIT_USDT',
   mining: 'https://docs.witnet.io/node-operators/docker-quick-start-guide',
-  mww: '#',
+  letsexchange: "https://letsexchange.io/coin/wit",
   my_wit_wallet: 'https://mywitwallet.com/',
   newsletter: 'http://eepurl.com/iDxYzs',
   oracle: '#oracle',

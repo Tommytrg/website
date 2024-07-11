@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4">
+  <div class="px-4 py-28">
     <div
       class="flex flex-col items-center gap-y-lg justify-items-center relative"
     >
@@ -26,11 +26,11 @@
         <h2 class="text text-center">{{ $t('hero.description') }}</h2>
       </div>
 
-      <CustomButton :type="ButtonType.primary" class="z-20">
+      <CustomButton :type="ButtonType.primary" class="z-20 mb-28">
         {{ $t('hero.action') }}
       </CustomButton>
 
-      <ArrowDownIcon class="m-xl z-20" />
+      <ArrowDownIcon class="scroll z-20" />
     </div>
   </div>
 </template>
@@ -73,15 +73,15 @@ import SquareDots from '@/assets/svg/square-dots.svg?component'
   position: absolute;
   width: 30px;
   height: auto;
-  top: 30px;
-  right: 0px;
+  top: 10%;
+  right: 1%;
 }
 
 .plus2 {
   position: absolute;
   width: 15px;
   height: auto;
-  top: 130px;
+  top: 25%;
   right: 0px;
 }
 
@@ -89,8 +89,25 @@ import SquareDots from '@/assets/svg/square-dots.svg?component'
   position: absolute;
   width: 30px;
   height: auto;
-  top: 500px;
-  right: 16px;
+  top: 80%;
+  right: 10%;
+}
+
+.scroll {
+  width: 40px;
+  height: auto;
+  animation: down 1s infinite  alternate;
+}
+
+
+@keyframes down {
+ 0% {
+    transform: translateY(0px);
+  }
+
+ 100% {
+    transform: translateY(-30px);
+  }
 }
 
 @media (min-width: 640px) {
@@ -102,8 +119,8 @@ import SquareDots from '@/assets/svg/square-dots.svg?component'
 
 .plus1{
   width: 30px;
-  top: px;
-  left: 7%;
+  top: 40%;
+  left: 15%;
 }
 
 .zigzag1 {
@@ -114,20 +131,20 @@ import SquareDots from '@/assets/svg/square-dots.svg?component'
 
 .zigzag2 {
   width: 50px;
-  top: 30px;
+  top: 15%;
   right: 10%;
 }
 
 .plus2 {
   width: 30px;
-  top: 130px;
-  right: 0px;
+  top: 45%;
+  right: 0;
 }
 
 .squaredots2 {
   width: 60px;
-  top: 500px;
-  right: 16px;
+  top: 70%;
+  right: 15%;
 }
 
 }

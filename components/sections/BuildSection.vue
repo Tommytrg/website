@@ -5,6 +5,7 @@
         keypath="build-section.title.key_features"
         class="title-h2"
         tag="span"
+        id="build"
       >
         <span class="blue">{{ $t('build-section.title.dot') }}</span>
       </i18n-t>
