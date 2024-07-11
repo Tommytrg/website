@@ -36,6 +36,8 @@ return props.index.toLocaleString('en-US', {
 <style scoped lang="scss">
 .card {
   box-shadow: 7px 10px 0px rgb(0, 0, 0);
+  margin-bottom: 10px;
+  margin-right: 7px;;
 }
 
 .title-h2 {

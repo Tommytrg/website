@@ -33,7 +33,7 @@
  
     </div>
 
-    <PalmBlackIcon class="col-start-2 col-span-2 palm" />
+    <PalmBlackIcon class="col-start-2 col-span-2 palm hidden" />
   </div>
 </template>
 

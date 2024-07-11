@@ -19,7 +19,7 @@
 
     <template v-slot:content>
       <div
-        class="flex content-center items-center justify-center flex-row mt-lg"
+        class="flex content-center items-center justify-center flex-row sm:mt-lg"
       >
         <CircleIcon
           class="relative z-10 w-10 h-auto top-5 left-5 sm:w-20 sm:top-7 sm:left-7"

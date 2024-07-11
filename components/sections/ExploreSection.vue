@@ -39,12 +39,12 @@ const explorers: Array<Explorer> = [
   {
     title: t('explore.explorer-1.title'),
     description: t('explore.explorer-1.description'),
-    url: URLS.dataFeedsExplorer,
+    url: URLS.data_feeds_explorer,
   },
   {
     title: t('explore.explorer-2.title'),
     description: t('explore.explorer-2.description'),
-    url: URLS.blockExplorer,
+    url: URLS.block_explorer,
   },
 ]
 </script>

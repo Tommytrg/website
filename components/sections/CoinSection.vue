@@ -6,12 +6,12 @@
       <div class="flex justify-center items-center mb-xl flex-col md:flex-row">
         <i18n-t
           keypath="coin.title.main"
-          class="text-8xl font-bold text-white-50"
-          tag="h3"
-        >
+          class="text-6xl sm:text-7xl lg:text-8xl font-bold text-white-50" tag="h3">
           <span class="text-wit-blue-500">{{ $t('coin.title.mark') }}</span>
         </i18n-t>
+
         <p class="mx-xl line transform rotate-90 md:transform-none"></p>
+        
         <div class="max-w-md">
           <h4 class="text-4xl font-bold text-white-50 mb-md">
             {{ $t('coin.description1') }}
@@ -22,15 +22,18 @@
       </div>
 
       <CustomButton :type="ButtonType.primary" class="mb-md">
+        <!-- <i18n-t
+          keypath="coin.run_in_platform.main"
+          class="flex flex-row text-white-50" tag="span">
+          <span class="text-white-50">{{ $t('coin.run_in_platform.windows') }}</span>
+        </i18n-t> -->
+
         Run a Witnet Node and Stake on Windows
       </CustomButton>
 
       <p class="text-lg text-wit-blue-500 mb-lg">Windows • x86_64 • 14.8 MB ⓘ</p>
 
       <p class="text-large text-white-50 text-center max-w-4xl mb-xl">
-        To participate in the Witnet network, run a Witnet node and stake some
-        $WIT. Stakers can earn rewards while contributing to data retrieval,
-        verification, and network security!
       </p>
 
       <div class="flex flex-col md:flex-row">
@@ -41,12 +44,12 @@
 
         <div class="flex flex-col items-center mb-xl md:mb-none md:mr-xl ">
           <WindowsIcon  class="icon mb-md" />
-          <p class="text-sm">Docker</p>
+          <p class="text-sm">Windows</p>
         </div>
 
         <div class="flex flex-col items-center mb-xl md:mb-none md:mr-xl">
           <AppleIcon class="icon mb-md" />
-          <p class="text-sm">Docker</p>
+          <p class="text-sm">Apple</p>
         </div>
 
         <div class="flex flex-col items-center mb-xl md:mb-none md:mr-xl">
@@ -56,7 +59,7 @@
 
         <div class="flex flex-col items-center mb-xl md:mb-none md:mr-xl">
           <RaspberryIcon class="icon mb-md" />
-          <p class="text-sm">Docker</p>
+          <p class="text-sm">Raspberry</p>
         </div>
       </div>
 
@@ -115,12 +118,12 @@ const explorers: Array<Explorer> = [
   // {
   //   title: t('coin.explorer-1.title'),
   //   description: t('coin.explorer-1.description'),
-  //   url: URLS.dataFeedsExplorer,
+  //   url: URLS.data_feeds_explorer,
   // },
   // {
   //   title: t('coin.explorer-2.title'),
   //   description: t('explore.explorer-2.description'),
-  //   url: URLS.blockExplorer,
+  //   url: URLS.block_explorer,
   // },
 ]
 </script>

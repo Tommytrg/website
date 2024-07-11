@@ -93,4 +93,44 @@ import SquareDots from '@/assets/svg/square-dots.svg?component'
   right: 16px;
 }
 
+@media (min-width: 640px) {
+.squaredots1 {
+  width: 50px;
+  top: 1%;
+  left: 5%;
+}
+
+.plus1{
+  width: 30px;
+  top: px;
+  left: 7%;
+}
+
+.zigzag1 {
+  width: 50px;
+  top: 70%;
+  left: 3%;
+}
+
+.zigzag2 {
+  width: 50px;
+  top: 30px;
+  right: 10%;
+}
+
+.plus2 {
+  width: 30px;
+  top: 130px;
+  right: 0px;
+}
+
+.squaredots2 {
+  width: 60px;
+  top: 500px;
+  right: 16px;
+}
+
+}
+
+
 </style>

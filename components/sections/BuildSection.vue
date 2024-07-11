@@ -3,7 +3,7 @@
     <template v-slot:title>
       <i18n-t
         keypath="build-section.title.key_features"
-        class="title-h2 mb-lg max-w-screen-sm"
+        class="title-h2"
         tag="span"
       >
         <span class="blue">{{ $t('build-section.title.dot') }}</span>
@@ -11,7 +11,7 @@
     </template>
 
     <template v-slot:content>
-      <div class="grid grid-cols-1 p-xl gap-xl lg:grid-cols-2">
+      <div class="grid grid-cols-1 gap-sm lg:grid-cols-2">
         <BuildWithWitnet
           v-for="(reason, index) in reasons"
           :index="index + 1"

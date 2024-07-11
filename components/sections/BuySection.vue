@@ -7,29 +7,34 @@
     </template>
 
     <template v-slot:content>
-      <div class="max-w-4xl grid p-lg gap-xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center md:justify-items-start">
-
-        <!-- <div class="flex items-center"> -->
-          <IconWithText v-for="exchange in exchanges" :text="exchange.name">
-            <GateIcon class="icon" v-if="exchange.logo === 'gate'"></GateIcon>
-            <MexcIcon class="icon" v-if="exchange.logo === 'mexc'"></MexcIcon>
-            <BitmartIcon
-              class="icon"
-              v-if="exchange.logo === 'bitmart'"
-            ></BitmartIcon>
-            <ChangellyIcon
-              class="icon"
-              v-if="exchange.logo === 'changelly'"
-            ></ChangellyIcon>
-            <SimpleswapIcon
-              class="icon"
-              v-if="exchange.logo === 'simpleswap'"
-            ></SimpleswapIcon>
-            <LetsexchangeIcon
-              class="icon"
-              v-if="exchange.logo === 'letsexchange'"
-            ></LetsexchangeIcon>
-          </IconWithText>
+      <div
+        class="max-w-4xl grid p-lg gap-xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center md:justify-items-start"
+      >
+        <IconWithText
+          v-for="exchange in exchanges"
+          :text="exchange.name"
+          :link="exchange.link"
+          class="w-60"
+        >
+          <GateIcon class="icon" v-if="exchange.logo === 'gate'"></GateIcon>
+          <MexcIcon class="icon" v-if="exchange.logo === 'mexc'"></MexcIcon>
+          <BitmartIcon
+            class="icon"
+            v-if="exchange.logo === 'bitmart'"
+          ></BitmartIcon>
+          <ChangellyIcon
+            class="icon"
+            v-if="exchange.logo === 'changelly'"
+          ></ChangellyIcon>
+          <SimpleswapIcon
+            class="icon"
+            v-if="exchange.logo === 'simpleswap'"
+          ></SimpleswapIcon>
+          <LetsexchangeIcon
+            class="icon"
+            v-if="exchange.logo === 'letsexchange'"
+          ></LetsexchangeIcon>
+        </IconWithText>
       </div>
     </template>
   </SectionBase>
@@ -42,32 +47,39 @@ import BitmartIcon from '@/assets/svg/bitmart.svg?component'
 import ChangellyIcon from '@/assets/svg/changelly.svg?component'
 import SimpleswapIcon from '@/assets/svg/simpleswap.svg?component'
 import LetsexchangeIcon from '@/assets/svg/letsexchange.svg?component'
+import { URLS } from "../../constants.js"
 
 const { t } = useI18n()
 const exchanges: Array<any> = [
   {
     name: t('buy-section.exchanges.gate'),
     logo: 'gate',
+    link: 'https://www.gate.io/trade/WIT_USDT',
   },
   {
     name: t('buy-section.exchanges.mexc'),
     logo: 'mexc',
+    link: 'https://www.mexc.com/exchange/WIT_USDT',
   },
   {
     name: t('buy-section.exchanges.bitmart'),
     logo: 'bitmart',
+    link: URLS.bitmart 
   },
   {
     name: t('buy-section.exchanges.changelly'),
     logo: 'changelly',
+    link: URLS.changelly 
   },
   {
     name: t('buy-section.exchanges.simpleswap'),
     logo: 'simpleswap',
+    link: URLS.simpleswap, 
   },
   {
     name: t('buy-section.exchanges.letsexchange'),
     logo: 'letsexchange',
+    link: "https://letsexchange.io/coin/wit"
   },
 ]
 </script>
