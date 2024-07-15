@@ -1,15 +1,20 @@
 <template>
   <CenteredSection background="blue">
-    <div class="grid grid-cols-1 gap-8 2xl:grid-cols-3 justify-center justify-items-center md:justify-items-start">
+    <div
+      class="grid grid-cols-1 gap-8 2xl:grid-cols-3 justify-center justify-items-center md:justify-items-start"
+    >
       <div class="flex self-center sm:w-96 justify-self-center">
-        <ArrowTurnRightIcon class="arrow m-md"/>
-        <!-- <h2 class="title-h1 mr-sm">{{ $t('explore.title') }}</h2> -->
+        <ArrowTurnRightIcon class="arrow m-md" />
 
-        <i18n-t keypath="explore.title.main" class="title-h2 font-bold mr-0 sm:mr-sm white" tag="h2">
+        <i18n-t
+          keypath="explore.title.main"
+          class="title-h2 font-bold mr-0 sm:mr-sm text-white-50"
+          tag="h2"
+        >
           <span class="text-black-950">{{ $t('explore.title.witnet') }}</span>
         </i18n-t>
       </div>
-     
+
       <div class="flex flex-col md:flex-row">
         <ExplorerLink
           v-for="explorer in explorers"

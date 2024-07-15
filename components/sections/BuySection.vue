@@ -16,24 +16,15 @@
           :link="exchange.link"
           class="w-60"
         >
-          <GateIcon class="icon" v-if="exchange.logo === 'gate'"></GateIcon>
-          <MexcIcon class="icon" v-if="exchange.logo === 'mexc'"></MexcIcon>
-          <BitmartIcon
-            class="icon"
-            v-if="exchange.logo === 'bitmart'"
-          ></BitmartIcon>
-          <ChangellyIcon
-            class="icon"
-            v-if="exchange.logo === 'changelly'"
-          ></ChangellyIcon>
-          <SimpleswapIcon
-            class="icon"
-            v-if="exchange.logo === 'simpleswap'"
-          ></SimpleswapIcon>
+          <GateIcon class="icon" v-if="exchange.logo === 'gate'" />
+          <MexcIcon class="icon" v-if="exchange.logo === 'mexc'" />
+          <BitmartIcon class="icon" v-if="exchange.logo === 'bitmart'" />
+          <ChangellyIcon class="icon" v-if="exchange.logo === 'changelly'" />
+          <SimpleswapIcon class="icon" v-if="exchange.logo === 'simpleswap'" />
           <LetsexchangeIcon
             class="icon"
             v-if="exchange.logo === 'letsexchange'"
-          ></LetsexchangeIcon>
+          />
         </IconWithText>
       </div>
     </template>
@@ -47,7 +38,7 @@ import BitmartIcon from '@/assets/svg/bitmart.svg?component'
 import ChangellyIcon from '@/assets/svg/changelly.svg?component'
 import SimpleswapIcon from '@/assets/svg/simpleswap.svg?component'
 import LetsexchangeIcon from '@/assets/svg/letsexchange.svg?component'
-import { URLS } from "../../constants.js"
+import { URLS } from '../../constants.js'
 
 const { t } = useI18n()
 const exchanges: Array<any> = [
@@ -64,22 +55,22 @@ const exchanges: Array<any> = [
   {
     name: t('buy-section.exchanges.bitmart'),
     logo: 'bitmart',
-    link: URLS.bitmart 
+    link: URLS.bitmart,
   },
   {
     name: t('buy-section.exchanges.changelly'),
     logo: 'changelly',
-    link: URLS.changelly 
+    link: URLS.changelly,
   },
   {
     name: t('buy-section.exchanges.simpleswap'),
     logo: 'simpleswap',
-    link: URLS.simpleswap, 
+    link: URLS.simpleswap,
   },
   {
     name: t('buy-section.exchanges.letsexchange'),
     logo: 'letsexchange',
-    link: URLS.letsexchange
+    link: URLS.letsexchange,
   },
 ]
 </script>

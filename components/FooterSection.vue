@@ -98,7 +98,7 @@ const footerSections = {
 }
 
 import snakeCase from 'lodash.snakecase'
-import  { URLS } from "../constants"
+import { URLS } from '../constants'
 
 function getFooterLinks(sections) {
   return Object.entries(sections).map(([sectionName, sectionItems]) => ({
@@ -116,24 +116,3 @@ function getI18nStringFromSectionItem(sectionName, sectionItem) {
 
 const footerLinks = getFooterLinks(footerSections)
 </script>
-
-<style scoped lang="scss">
-// .bottom {
-//   grid-template-columns: max-content 1fr;
-//   grid-template-rows: max-content;
-//   .copyright {
-//     grid-row: 2;
-//     grid-column: 2;
-//   }
-//   .logo {
-//     grid-row: 2;
-//     grid-column: 1;
-//   }
-// }
-
-// @media (min-width: 600px) {
-//   .bottom {
-//     grid-template-columns: max-content 1fr max-content;
-//   }
-// }
-</style>

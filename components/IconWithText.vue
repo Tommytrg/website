@@ -1,12 +1,11 @@
 <template>
   <a :href="link">
-  <div class="flex items-center">
-    <RoundedIcon class="mr-md">
-      <slot></slot>
-      <!-- <GateIcon /> -->
-    </RoundedIcon>
-    <p class="text-lg">{{ text }}</p>
-  </div>
+    <div class="flex items-center">
+      <RoundedIcon class="mr-md">
+        <slot></slot>
+      </RoundedIcon>
+      <p class="text-lg">{{ text }}</p>
+    </div>
   </a>
 </template>
 
@@ -18,11 +17,10 @@ defineProps({
   },
   link: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 })
 </script>
-
 
 <style>
 /* TODO */

@@ -1,4 +1,5 @@
 import { getBrowserOs } from './getBrowserOs'
+// TODO: move to constants
 export const URL_RELEASE_BASE =
   'https://api.github.com/repos/witnet/witnet-rust/releases/latest'
 

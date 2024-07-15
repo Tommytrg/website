@@ -5,17 +5,23 @@
   >
     <div class="flex flex-col max-w-7xl">
       <div class="flex flex-col items-center">
-
-
-        <h2 v-if="headingType === 'h2'" class="title title-h2 text-center max-w-screen-md" :class="{ 'mb-md': !separator }">
+        <h2
+          v-if="headingType === 'h2'"
+          class="title title-h2 text-center max-w-screen-md"
+          :class="{ 'mb-md': !separator }"
+        >
           <slot name="title"></slot>
         </h2>
-        
-        <h3 v-if="headingType === 'h3'" class="title title-h2 text-center max-w-screen-md" :class="{ 'mb-md': !separator }">
+
+        <h3
+          v-if="headingType === 'h3'"
+          class="title title-h2 text-center max-w-screen-md"
+          :class="{ 'mb-md': !separator }"
+        >
           <slot name="title"></slot>
         </h3>
 
-        <DashesIcon v-if="separator" class="m-xl dashes"/>
+        <DashesIcon v-if="separator" class="m-xl dashes" />
 
         <p class="description text mb-lg max-w-2xl text-center px-md">
           {{ description }}
@@ -45,8 +51,8 @@ const props = defineProps({
   headingType: {
     type: String,
     required: false,
-    default: "h3"
-  } 
+    default: 'h3',
+  },
 })
 
 const backgrounds = {

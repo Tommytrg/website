@@ -1,3 +1,6 @@
+<!--TODO: This comment is the bigger version of the component. We have to add slashes in bigger screens
+in the current component below -->
+
 <!-- <template>
   <div
     class="out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
@@ -21,27 +24,26 @@
 </template> -->
 
 <template>
-<div>
+  <div>
+    <div
+      class="out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
+    >
+      <RoundedIcon class="rounded-icon">
+        <slot name="icon"></slot>
+      </RoundedIcon>
+      <h3 class="text-2xl text-black-950 font-semibold leading-4 pl-14">
+        {{ title }}
+      </h3>
+      <hr class="hr my-md ml-14" />
+      <p class="text-base text-black-950 mb-xl">
+        {{ description }}
+      </p>
 
-  <div
-    class="out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
-  >
-    <RoundedIcon class="rounded-icon">
-      <slot name="icon"></slot>
-    </RoundedIcon>
-    <h3 class="text-2xl text-black-950 font-semibold leading-4 pl-14">
-      {{ title }}
-    </h3>
-    <hr class="hr my-md ml-14" />
-    <p class="text-base text-black-950 mb-xl">
-      {{ description }}
-    </p>
-
-    <div class="flex items-center">
-      <ArrowButton class="action">{{ action }}</ArrowButton>
+      <div class="flex items-center">
+        <ArrowButton class="action">{{ action }}</ArrowButton>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <script setup lang="ts">
@@ -57,15 +59,15 @@ const props = defineProps({
   },
   action: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 })
 </script>
 
 <style scoped lang="scss">
 :slotted(svg) {
   width: 60px;
-  height:  60px;
+  height: 60px;
 }
 .out-of-boundaries {
   // add margin equal to out of boundaries

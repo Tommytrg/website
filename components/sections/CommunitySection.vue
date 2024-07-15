@@ -28,7 +28,7 @@
 
 <script setup lang="ts">
 const { t } = useI18n()
-// import { URLS } from '@/constants'
+
 import MegaphoneIcon from '@/assets/svg/megaphone.svg?component'
 import BadgeIcon from '@/assets/svg/badge.svg?component'
 </script>

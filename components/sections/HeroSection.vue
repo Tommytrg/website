@@ -13,13 +13,12 @@
       <Plus class="plus2" />
       <SquareDots class="squaredots2" />
 
-      <!-- <Plus class="absolute right-xl top-[300px] z-10" /> -->
-      <!-- <SquareDots class="absolute left-xl top-xl z-10" /> -->
-      <!-- <Plus class="absolute right-xl top-[300px] z-10" /> -->
-      <!-- <Zigzag class="absolute right-xl top-xl z-10 rotate-90" /> -->
-      <!-- <SquareDots class="absolute right-xl bottom-xl z-10" /> -->
       <div class="max-w-c-3xl z-20">
-        <i18n-t keypath="hero.title.main" class="title-h2 text-center mb-8" tag="h1">
+        <i18n-t
+          keypath="hero.title.main"
+          class="title-h2 text-center mb-8"
+          tag="h1"
+        >
           <span class="text-wit-blue-500">{{ $t('hero.title.gradient') }}</span>
         </i18n-t>
 
@@ -53,7 +52,7 @@ import SquareDots from '@/assets/svg/square-dots.svg?component'
   left: 0px;
 }
 
-.plus1{
+.plus1 {
   position: absolute;
   width: 15px;
   height: auto;
@@ -96,58 +95,54 @@ import SquareDots from '@/assets/svg/square-dots.svg?component'
 .scroll {
   width: 40px;
   height: auto;
-  animation: down 1s infinite  alternate;
+  animation: down 1s infinite alternate;
 }
 
-
 @keyframes down {
- 0% {
+  0% {
     transform: translateY(0px);
   }
 
- 100% {
+  100% {
     transform: translateY(-30px);
   }
 }
 
 @media (min-width: 640px) {
-.squaredots1 {
-  width: 50px;
-  top: 1%;
-  left: 5%;
+  .squaredots1 {
+    width: 50px;
+    top: 1%;
+    left: 5%;
+  }
+
+  .plus1 {
+    width: 30px;
+    top: 40%;
+    left: 15%;
+  }
+
+  .zigzag1 {
+    width: 50px;
+    top: 70%;
+    left: 3%;
+  }
+
+  .zigzag2 {
+    width: 50px;
+    top: 15%;
+    right: 10%;
+  }
+
+  .plus2 {
+    width: 30px;
+    top: 45%;
+    right: 0;
+  }
+
+  .squaredots2 {
+    width: 60px;
+    top: 70%;
+    right: 15%;
+  }
 }
-
-.plus1{
-  width: 30px;
-  top: 40%;
-  left: 15%;
-}
-
-.zigzag1 {
-  width: 50px;
-  top: 70%;
-  left: 3%;
-}
-
-.zigzag2 {
-  width: 50px;
-  top: 15%;
-  right: 10%;
-}
-
-.plus2 {
-  width: 30px;
-  top: 45%;
-  right: 0;
-}
-
-.squaredots2 {
-  width: 60px;
-  top: 70%;
-  right: 15%;
-}
-
-}
-
-
 </style>

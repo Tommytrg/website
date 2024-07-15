@@ -24,6 +24,7 @@
       </div>
 
       <CustomButton :type="ButtonType.primary" class="mb-md">
+        <!-- TODO: fix extra spacing using i18n-t -->
         <!-- <i18n-t
           keypath="coin.run_in_platform.main"
           class="flex flex-row text-white-50" tag="span">
@@ -82,6 +83,8 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
+
 // import { URLS } from '@/constants'
 import DockerIcon from '@/assets/svg/docker.svg?component'
 import WindowsIcon from '@/assets/svg/windows.svg?component'
@@ -114,41 +117,30 @@ type Explorer = {
   description: string
   url: string
 }
+
+// TODO: add urls
 const explorers: Array<Explorer> = [
   {
-    title: 'Get Started',
-    description: 'Start Staking Now and earn rewards!',
-    url: '',
+    title: t('coin.cards.get_started.title'),
+    description: t('coin.cards.get_started.description'),
+    url: "",
   },
   {
-    title: 'Tutorials',
-    description:
-      'Learn the basics about taking with the comprehensive tutorials!',
-    url: '',
+    title: t('coin.cards.tutorials.title'),
+    description: t('coin.cards.tutorials.description'),
+    url: "",
   },
   {
-    title: 'Contribute',
-    description:
-      'Help make Witnet even better. Submit code, examples, libraries, or help us fix bugs.',
-    url: '',
+    title: t('coin.cards.contribute.title'),
+    description: t('coin.cards.contribute.description'),
+    url: "",
   },
-  // {
-  //   title: t('coin.explorer-1.title'),
-  //   description: t('coin.explorer-1.description'),
-  //   url: URLS.data_feeds_explorer,
-  // },
-  // {
-  //   title: t('coin.explorer-2.title'),
-  //   description: t('explore.explorer-2.description'),
-  //   url: URLS.block_explorer,
-  // },
 ]
 </script>
 
 <style scoped lang="scss">
-.palm {
-  /* position: ; */
-}
+// .palm {
+// }
 
 .title-h3 {
   line-height: 1;

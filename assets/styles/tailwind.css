@@ -7,16 +7,12 @@
   .title-h1 {
     @apply font-title text-9xl;
     font-weight: 600;
-    /* line-height: 1; */
     line-height: 0.9;
     color: #232323;
 
   }
   .title-h2 {
-    /* @apply font-title text-8xl; */
-    /* @apply text-7xl; */
     @apply text-5xl sm:text-6xl lg:text-7xl;
-    /* @apply lg:text-7xl; */
 
     font-weight: 600;
     line-height: 1.1;

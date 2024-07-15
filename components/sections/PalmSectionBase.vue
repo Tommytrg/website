@@ -1,34 +1,16 @@
 <template>
+  <!-- TODO: Add palm icon according to prop position: 'left' | 'right' -->
   <div
     class="w-full flex justify-center"
     :class="[backgroundClass, `background-${background}`]"
   >
     <div class="flex flex-col max-w-7xl">
-        <slot></slot>
-      <!-- <div class="flex flex-col items-center">
-
-
-        <h2 v-if="headingType === 'h2'" class="title title-h2 mb-md">
-          <slot name="title"></slot>
-        </h2>
-        
-        <h3 v-if="headingType === 'h3'" class="title title-h2 mb-md">
-          <slot name="title"></slot>
-        </h3>
-
-        <DashesIcon v-if="separator" class="m-xl dashes"/>
-
-        <p class="description text mb-lg max-w-2xl text-center px-md">
-          {{ description }}
-        </p>
-      </div>
-      <slot name="content"></slot> -->
+      <slot></slot>
     </div>
   </div>
 </template>
 
 <script setup>
-import DashesIcon from '@/assets/svg/dashes.svg?component'
 const props = defineProps({
   description: {
     type: String,
@@ -39,15 +21,11 @@ const props = defineProps({
     required: false,
     default: 'white',
   },
-  separator: {
-    type: String,
-    required: false,
-  },
   headingType: {
     type: String,
     required: false,
-    default: "h3"
-  } 
+    default: 'h3',
+  },
 })
 
 const backgrounds = {

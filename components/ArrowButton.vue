@@ -1,10 +1,10 @@
 <template>
-    <CustomButton :type="ButtonType.terciary">
-      <span class="flex items-center">
-        <slot></slot>
-        <ArrowRightIcon class="arrow ml-md"></ArrowRightIcon>
-      </span>
-    </CustomButton>
+  <CustomButton :type="ButtonType.terciary">
+    <span class="flex items-center">
+      <slot></slot>
+      <ArrowRightIcon class="arrow ml-md"></ArrowRightIcon>
+    </span>
+  </CustomButton>
 </template>
 
 <script setup>

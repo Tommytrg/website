@@ -23,27 +23,27 @@ type Platform = {
 const platforms: Array<Platform> = [
   {
     name: 'Docker',
-    url: URLS.dockerNode,
+    url: URLS.docker_node,
     icon,
   },
   {
     name: 'Windows',
-    url: URLS.windowsNode,
+    url: URLS.windows_node,
     icon,
   },
   {
     name: 'macOS',
-    url: URLS.macosNode,
+    url: URLS.macos_node,
     icon,
   },
   {
     name: 'GNU/Linux',
-    url: URLS.linuxNode,
+    url: URLS.linux_node,
     icon,
   },
   {
     name: 'Rasberry Pi',
-    url: URLS.rasberrypiNode,
+    url: URLS.rasberrypi_node,
     icon,
   },
 ]

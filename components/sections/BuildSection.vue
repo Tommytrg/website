@@ -1,17 +1,17 @@
 <template>
   <SectionBase :description="t('build-section.description')">
-    <template v-slot:title>
+    <template #title>
       <i18n-t
         keypath="build-section.title.key_features"
         class="title-h2"
         tag="span"
         id="build"
       >
-        <span class="blue">{{ $t('build-section.title.dot') }}</span>
+        <span class="text-wit-blue-500">{{ $t('build-section.title.dot') }}</span>
       </i18n-t>
     </template>
 
-    <template v-slot:content>
+    <template #content>
       <div class="grid grid-cols-1 gap-sm lg:grid-cols-2">
         <BuildWithWitnet
           v-for="(reason, index) in reasons"

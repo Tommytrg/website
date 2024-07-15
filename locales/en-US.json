@@ -41,6 +41,20 @@
       "main": "Run a Witnet Node and Stake on {0}",
       "windows": "Windows",
       "linux": "Linux"
+    },
+    "cards": {
+      "get_started": {
+        "title": "Get Started",
+        "description": "Start Staking Now and earn rewards!"
+      },
+      "tutorials": {
+        "title": "Tutorials",
+        "description": "Learn the basics about taking with the comprehensive tutorials!"
+      },
+      "contribute": {
+        "title": "Contribute",
+        "description": "Help make Witnet even better. Submit code, examples, libraries, or help us fix bugs."
+      }
     }
   },
   "buy-section": {
