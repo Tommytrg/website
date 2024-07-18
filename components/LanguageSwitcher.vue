@@ -90,7 +90,7 @@ const iconMap: Dictionary = computed(() => {
     background: transparent;
     box-shadow: none;
     border: none;
-    color: $black;
+    // color: $black;
     min-width: max-content;
     border-radius: 16px;
     font-size: 16px;
@@ -114,22 +114,22 @@ const iconMap: Dictionary = computed(() => {
     font-size: 8px;
   }
   .vs__dropdown-menu {
-    background: $white;
+    // background: $white;
   }
 
   .vs__dropdown-option {
     font-family: 'NeueMachina-Regular', sans-serif;
-    color: $black;
+    // color: $black;
   }
 
   .vs__dropdown-option--highlight {
-    color: $white;
-    background: $black;
+    // color: $white;
+    // background: $black;
   }
 
   .vs__clear,
   .vs__open-indicator {
-    fill: $white;
+    // fill: $white;
     transform: scale(0.5);
     transition: transform 150ms cubic-bezier(1, -0.115, 0.975, 0.855);
     transition-timing-function: cubic-bezier(1, -0.115, 0.975, 0.855);
@@ -141,7 +141,7 @@ const iconMap: Dictionary = computed(() => {
     vertical-align: middle;
   }
   .vs__selected {
-    color: $white;
+    // color: $white;
     font-family: 'NeueMachina-Regular', sans-serif;
     margin: 0;
     padding: 4px 0 0 0;
@@ -153,10 +153,10 @@ const iconMap: Dictionary = computed(() => {
   }
   &:hover {
     .vs__selected {
-      color: $white;
+      // color: $white;
     }
     .vs__open-indicator {
-      color: $white;
+      // color: $white;
     }
   }
   // remove extra space
