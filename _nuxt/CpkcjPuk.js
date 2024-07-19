@@ -1,0 +1,1 @@
+import{_ as e,v as o,t as c}from"./DPKoBI9n.js";const r={},t={class:"grid grid-flow-row overflow-hidden"};function s(n,_){return c(),o("div",t)}const d=e(r,[["render",s],["__scopeId","data-v-7a777538"]]);export{d as default};
